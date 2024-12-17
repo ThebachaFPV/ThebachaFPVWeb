@@ -8,5 +8,6 @@
     "target": "ESNext",
     "skipLibCheck": true,
     "forceConsistentCasingInFileNames": true
-  }
+  },
+  "include": ["src"]
 }

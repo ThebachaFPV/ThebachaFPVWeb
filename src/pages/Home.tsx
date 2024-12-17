@@ -1,11 +1,15 @@
 import React from 'react';
-import Membership from './Membership'; // Correct relative path
+import logo from '../assets/logo.png';  // Import the PNG logo
 
 const Home: React.FC = () => {
   return (
-    <div>
-      <h1>Home Page</h1>
-      <Membership />
+    <div style={{ textAlign: 'center', padding: '2rem' }}>
+      <img src={logo} alt="League Logo" style={{ width: '300px', marginBottom: '2rem' }} />
+      <h1>Welcome to Thebacha FPV Racing League</h1>
+      <p>
+        Thebacha FPV Racing League is dedicated to providing a thrilling and competitive environment for FPV drone racing enthusiasts. 
+        Join us to experience the excitement of high-speed drone racing, improve your skills, and connect with fellow racers.
+      </p>
     </div>
   );
 };
