@@ -89,12 +89,15 @@ footer {
   margin: 0;
 }
 
-.store-nav ul li a {
+.store-nav ul li button {
+  background: none;
+  border: none;
   color: var(--white);
-  text-decoration: none;
+  cursor: pointer;
+  font-size: 1rem;
 }
 
-.store-nav ul li a:hover {
+.store-nav ul li button:hover {
   text-decoration: underline;
 }
 

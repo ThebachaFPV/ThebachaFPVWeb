@@ -1,6 +1,6 @@
 import React from 'react';
 
-const ExampleProduct = {
+const Product = {
   id: 'BFPV-AIR75-FS',
   name: 'BetaFPV Air75 ELRS 1S Whoop',
   price: 168.75,
@@ -71,4 +71,4 @@ Package Contents
 
 };
 
-export default ExampleProduct;
+export default Product;

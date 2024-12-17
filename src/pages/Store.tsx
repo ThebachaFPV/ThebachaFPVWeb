@@ -11,18 +11,23 @@ const Store: React.FC = () => {
   }
 
   const { cart, addToCart, removeFromCart, clearCart } = cartContext;
+  const [selectedCategory, setSelectedCategory] = useState<string | null>(null);
 
   const categories = Array.from(new Set(products.map((product) => product.category)));
+
+  const filteredProducts = selectedCategory
+    ? products.filter((product) => product.category === selectedCategory)
+    : products;
 
   return (
     <div>
       <h1>Store Page</h1>
-      <StoreNavBar />
+      <StoreNavBar categories={categories} setSelectedCategory={setSelectedCategory} />
       <div className="store-content">
         {categories.map((category) => (
           <section key={category} id={category}>
             <h2>{category.charAt(0).toUpperCase() + category.slice(1)}</h2>
-            {products
+            {filteredProducts
               .filter((product) => product.category === category)
               .map((product) => (
                 <ProductDisplay key={product.id} product={product} addToCart={addToCart} />
