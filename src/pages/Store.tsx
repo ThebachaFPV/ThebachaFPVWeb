@@ -61,15 +61,16 @@ const ProductDisplay: React.FC<{ product: any, addToCart: (product: any) => void
           {product.images.map((img: any, index: number) => (
             <img
               key={index}
-              src={img.image}
+              src={`${import.meta.env.BASE_URL}/assets/product-images/${img.image}`}
               alt={img.alt}
+              title={img.alt}
               className="thumbnail"
               onClick={() => setMainImage(img)}
             />
           ))}
         </div>
         <div className="main-image">
-          <img src={mainImage.image} alt={mainImage.alt} />
+          <img src={`${import.meta.env.BASE_URL}/assets/product-images/${mainImage.image}`} alt={mainImage.alt} />
           <p>{mainImage.alt}</p>
         </div>
       </div>
