@@ -1,7 +1,0 @@
-The store page needs to provide a Quantity option next to the cart button with an increment and decrement button on either side. 
-
-When the item is added to the cart it should display in the cart with title,item price, quantity, line totaL for the item.
-
-The cart should always show a running subtotal (currencies should be stated to be CAD in the store and in the cart), and the decrement button in the cart should ask when you only have one left and you click decerment, if you wish to remove the item from your cart, and do so after a confirmation. make sure that when you add an item to the cart, it checks if it's ID is already in the cart and increments the correct exiting line item or else add the item to the cart on its own line.
-
-The add to cart button should use the ID to add the product so each add to cart button is different.
