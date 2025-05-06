@@ -3,6 +3,8 @@
 
 This document will be outdated on November 4, 2025 when the new regs go into effect.
 
+![alt](https://github.com/spydmobile/ThebachaFPV/blob/main/src/assets/logo.jpeg?raw=true)
+
 ---
 
 This document provides a structured Table of Contents for a set of markdown files detailing drone regulations in Canada, organized by drone weight, location of use, and regulatory applicability.
