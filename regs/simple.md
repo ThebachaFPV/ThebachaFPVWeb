@@ -100,3 +100,11 @@ A. See: 📄 [Read the document](./Canada_Basic_Pilot_Certificate_Requirements.m
 
 ---
 
+## Link errors in Federal documents corrected
+
+ 🔗 [Transport Canada Aeronautical Information Manual (TC AIM) - TP 14371](https://tc.canada.ca/en/aviation/publications/transport-canada-aeronautical-information-manual-tc-aim-tp-14371)
+
+
+## Some helpful resources:
+
+🔗📄 [TP 12863 Human Factors for Aviation - Basic Handbook](https://archive.org/details/humanfactorsfora0000unse/page/200/mode/2up)
