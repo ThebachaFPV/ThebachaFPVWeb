@@ -3,7 +3,7 @@ import react from '@vitejs/plugin-react';
 import { viteStaticCopy } from 'vite-plugin-static-copy';
 
 export default defineConfig({
-  base: '/ThebachaFPVWeb', // Ensure this matches your GitHub Pages repository name
+  base: '/', // Serve site at the root of GitHub Pages
   server: {
     port: 5173,
   },
@@ -22,4 +22,4 @@ export default defineConfig({
     outDir: 'dist',
     assetsDir: 'assets',
   },
-}); 
+});
