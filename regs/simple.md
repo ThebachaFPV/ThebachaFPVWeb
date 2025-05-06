@@ -108,3 +108,7 @@ A. See: 📄 [Read the document](./Canada_Basic_Pilot_Certificate_Requirements.m
 ## Some helpful resources:
 
 🔗📄 [TP 12863 Human Factors for Aviation - Basic Handbook](https://archive.org/details/humanfactorsfora0000unse/page/200/mode/2up)
+
+🔗📄 [Transport Canada’s RPAS 101 Reference Manual](https://www.aerialevolution.ca/wp-content/uploads/2022/02/Nov-27-RPAS-101_EN-Final.pdf)
+
+🔗 [Federal CARS Legislation](https://laws-lois.justice.gc.ca/eng/regulations/SOR-96-433/index.html)
