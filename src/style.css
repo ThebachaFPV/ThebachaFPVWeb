@@ -38,12 +38,24 @@ nav ul li {
   margin: 0;
 }
 
-nav ul li a {
-  color: var(--white);
+nav ul li a, nav ul li a:visited {
+  color: var(--white) !important;
   text-decoration: none;
 }
 
-nav ul li a:hover {
+nav ul li a:hover, nav ul li a:focus {
+  color: var(--darker-blue) !important;
+  text-decoration: underline;
+}
+
+a, a:visited {
+  color: var(--lighter-blue);
+  text-decoration: underline;
+  transition: color 0.2s;
+}
+
+a:hover, a:focus {
+  color: var(--darker-blue);
   text-decoration: underline;
 }
 

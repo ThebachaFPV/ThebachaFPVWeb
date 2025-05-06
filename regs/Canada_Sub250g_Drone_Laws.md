@@ -28,7 +28,7 @@ Restrictions include:
 - Inside aerodrome traffic areas
 
 📜 [Transport Canada – Learn the Rules](https://tc.canada.ca/en/aviation/drone-safety/learn-rules-you-fly-your-drone)  
-🛠️ [NAV Drone App for Airspace Awareness](https://www.navcanada.ca/en/nav-drone.aspx)
+🛠️ [NAV Drone App for Airspace Awareness](https://www.navcanada.ca/en/flight-planning/drone-flight-planning.aspx)
 
 ---
 
