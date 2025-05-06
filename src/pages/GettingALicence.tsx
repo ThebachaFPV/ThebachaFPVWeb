@@ -10,12 +10,12 @@ const GettingALicence: React.FC = () => {
       <section style={{ margin: '2.5rem 0', textAlign: 'left' }}>
         <h2>Steps to Certification</h2>
         <ol>
-          <li>Review the <a href="/regs/Canada_Basic_Pilot_Certificate_Requirements.md" target="_blank" rel="noopener noreferrer">Basic Pilot Certificate Requirements</a>.</li>
+          <li>Review the <a href="https://github.com/thebachafpv/ThebachaFPVWeb/blob/main/regs/Canada_Basic_Pilot_Certificate_Requirements.md" target="_blank" rel="noopener noreferrer">Basic Pilot Certificate Requirements</a>.</li>
           <li>Study using the following resources:
             <ul>
-              <li><a href="/regs/Canada_Basic_Pilot_Study_Checklist.md" target="_blank" rel="noopener noreferrer">Study Checklist</a></li>
-              <li><a href="/regs/Canada_Basic_Pilot_Study_Resources.md" target="_blank" rel="noopener noreferrer">Study Resources</a></li>
-              <li><a href="/regs/Canada_Basic_Pilot_Study_TOC_Additions.md" target="_blank" rel="noopener noreferrer">Additional Topics</a></li>
+              <li><a href="https://github.com/thebachafpv/ThebachaFPVWeb/blob/main/regs/Canada_Basic_Pilot_Study_Checklist.md" target="_blank" rel="noopener noreferrer">Study Checklist</a></li>
+              <li><a href="https://github.com/thebachafpv/ThebachaFPVWeb/blob/main/regs/Canada_Basic_Pilot_Study_Resources.md" target="_blank" rel="noopener noreferrer">Study Resources</a></li>
+              <li><a href="https://github.com/thebachafpv/ThebachaFPVWeb/blob/main/regs/Canada_Basic_Pilot_Study_TOC_Additions.md" target="_blank" rel="noopener noreferrer">Additional Topics</a></li>
             </ul>
           </li>
           <li>Take the online exam on the <a href="https://tc.canada.ca/en/aviation/drone-safety/find-drone-pilot-certificate-exam" target="_blank" rel="noopener noreferrer">Transport Canada website</a>.</li>
@@ -28,8 +28,8 @@ const GettingALicence: React.FC = () => {
           If you are under 18, you will need a parent or guardian to sign a waiver. Download the appropriate form:
         </p>
         <ul>
-          <li><a href="/foundations/waivers/adult.md" target="_blank" rel="noopener noreferrer">Adult Waiver</a></li>
-          <li><a href="/foundations/waivers/minor.md" target="_blank" rel="noopener noreferrer">Minor Waiver</a></li>
+          <li><a href="https://github.com/thebachafpv/ThebachaFPVWeb/blob/main/foundations/waivers/adult.md" target="_blank" rel="noopener noreferrer">Adult Waiver</a></li>
+          <li><a href="https://github.com/thebachafpv/ThebachaFPVWeb/blob/main/foundations/waivers/minor.md" target="_blank" rel="noopener noreferrer">Minor Waiver</a></li>
         </ul>
       </section>
     </div>
