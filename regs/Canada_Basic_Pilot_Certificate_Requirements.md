@@ -22,7 +22,7 @@ Before taking the exam, study the following areas:
 - Emergency protocols
 - Human performance and decision-making
 
-📄 [Transport Canada Knowledge Requirements Guide (PDF)](https://tc.canada.ca/sites/default/files/2021-10/TP-15263-knowledge-requirements-rpas_0.pdf)
+📄 [Transport Canada Knowledge Requirements Guide (PDF)](https://tc.canada.ca/sites/default/files/2025-03/TP15263_E.pdf)
 
 ---
 
@@ -69,4 +69,4 @@ After passing the exam:
 
 - [Transport Canada Drone Safety](https://tc.canada.ca/en/aviation/drone-safety)
 - [Drone Management Portal](https://tc.canada.ca/en/aviation/drone-safety/drone-management-portal)
-- [RPAS Knowledge Requirements PDF](https://tc.canada.ca/sites/default/files/2021-10/TP-15263-knowledge-requirements-rpas_0.pdf)
+- [RPAS Knowledge Requirements PDF](https://tc.canada.ca/sites/default/files/2025-03/TP15263_E.pdf)

@@ -20,7 +20,7 @@ This checklist will help you prepare for the **Basic Pilot Certificate** require
 - [ ] RPAS operations and safety procedures
 - [ ] Emergency protocols and human factors
 
-📘 [Transport Canada Knowledge Guide (TP 15263)](https://tc.canada.ca/sites/default/files/2021-10/TP-15263-knowledge-requirements-rpas_0.pdf)
+📘 [Transport Canada Knowledge Guide (TP 15263)](https://tc.canada.ca/sites/default/files/2025-03/TP15263_E.pdf)
 
 ---
 
