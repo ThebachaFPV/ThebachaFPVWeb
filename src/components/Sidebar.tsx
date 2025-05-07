@@ -1,4 +1,5 @@
 import React from 'react';
+import EventCalendar from './EventCalendar';
 
 const Sidebar: React.FC = () => {
   return (
@@ -6,15 +7,11 @@ const Sidebar: React.FC = () => {
       <h2 style={{ color: 'var(--lighter-blue)' }}>Current Events</h2>
       <ul style={{ marginBottom: '2rem' }}>
         <li><b>Every Wednesday:</b> Training/Practice<br />Uncle Gabe's Friendship Center, 6pm–9pm</li>
-        <li><b>May 11, 2025:</b> Training/Practice<br />The Fort Smith Recreation Center Gym, 2pm–5pm</li>
-        <li><b>May 25, 2025:</b> Training/Practice<br />The Fort Smith Recreation Center Gym, 2pm–5pm</li>
-        <li><b>June 8, 2025:</b> Training/Practice<br />The Fort Smith Recreation Center Gym, 2pm–5pm</li>
-        <li><b>June 22, 2025:</b> Training/Practice<br />The Fort Smith Recreation Center Gym, 2pm–5pm</li>
+        <li><b>Alternating Sundays:</b> Training/Practice<br />The Fort Smith Recreation Center Gym, 2pm–5pm</li>
+        
       </ul>
       <h2 style={{ color: 'var(--lighter-blue)' }}>Event Calendar</h2>
-      <div style={{ background: 'var(--darker-blue)', padding: '1rem', borderRadius: 8, textAlign: 'center' }}>
-        <p>Event calendar coming soon.</p>
-      </div>
+      <EventCalendar />
     </aside>
   );
 };
