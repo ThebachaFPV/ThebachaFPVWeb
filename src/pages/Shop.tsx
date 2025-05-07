@@ -1,5 +1,5 @@
 import React from 'react';
-
+import rv_logo from '../assets/rotor_village_logo.webp';
 const Store: React.FC = () => {
   return (
     <div style={{ padding: '2rem', color: 'var(--white)', maxWidth: 900, margin: '0 auto' }}>
@@ -12,7 +12,7 @@ const Store: React.FC = () => {
     <p/><div className="rotor-village-div">
         Currently We "Shop Candian 🇨🇦" and
         
-        <img className="rotor-village-logo" src="src/assets/rotor_village_logo.webp" alt="RotorVillage Logo" style={{ width: '100px' }} />
+        <img className="rotor-village-logo" src={rv_logo} alt="RotorVillage Logo" style={{ width: '100px' }} />
         <a href="https://rotorvillage.ca/" target="_blank" rel="noopener noreferrer">RotorVillage</a>
          is our primary supplier. Their support is great and prices are very hard to beat.
          </div>
