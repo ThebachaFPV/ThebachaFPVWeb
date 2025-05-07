@@ -5,7 +5,7 @@
   "main": "index.js",
   "scripts": {
     "dev": "vite",
-    "build": "vite build && cp CNAME dist/ ",
+    "build": "rm -rf dist && vite build && cp CNAME dist/ ",
     "preview": "vite preview",
     "deploy": "gh-pages -d dist"
   },

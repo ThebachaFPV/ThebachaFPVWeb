@@ -28,7 +28,7 @@ const Membership: React.FC = () => {
         All benefits of Associate Membership plus:
         <ul>
           <li>Membership in <a href="https://www.maac.ca/">MAAC</a></li>          
-          <li>Use of our online store & Rentals</li>
+          <li>Access to league Rentals</li>
           <li>Fly at our league Training/Practices/Events</li>
           <li>Mentoring and training for licencing</li>
 
