@@ -40,30 +40,30 @@ const staticEvents: Event[] = [
   {
     title: "Training/Practice",
     location: "The Fort Smith Recreation Center Gym",
-    start: new Date('2025-05-11T14:00:00'),
+    start: new Date('2025-05-11T15:30:00'),
     end: new Date('2025-05-11T17:00:00'),
-    description: "May 11, 2025: Training/Practice at The Fort Smith Recreation Center Gym, 2pm–5pm"
+    description: "May 11, 2025: Training/Practice at The Fort Smith Recreation Center Gym, 3:30pm–5pm"
   },
   {
     title: "Training/Practice",
     location: "The Fort Smith Recreation Center Gym",
-    start: new Date('2025-05-25T14:00:00'),
+    start: new Date('2025-05-25T15:30:00'),
     end: new Date('2025-05-25T17:00:00'),
-    description: "May 25, 2025: Training/Practice at The Fort Smith Recreation Center Gym, 2pm–5pm"
+    description: "May 25, 2025: Training/Practice at The Fort Smith Recreation Center Gym, 3:30pm–5pm"
   },
   {
     title: "Training/Practice",
     location: "The Fort Smith Recreation Center Gym",
-    start: new Date('2025-06-08T14:00:00'),
+    start: new Date('2025-06-08T15:30:00'),
     end: new Date('2025-06-08T17:00:00'),
-    description: "June 8, 2025: Training/Practice at The Fort Smith Recreation Center Gym, 2pm–5pm"
+    description: "June 8, 2025: Training/Practice at The Fort Smith Recreation Center Gym, 3:30pm–5pm"
   },
   {
     title: "Training/Practice",
     location: "The Fort Smith Recreation Center Gym",
-    start: new Date('2025-06-22T14:00:00'),
+    start: new Date('2025-06-22T15:30:00'),
     end: new Date('2025-06-22T17:00:00'),
-    description: "June 22, 2025: Training/Practice at The Fort Smith Recreation Center Gym, 2pm–5pm"
+    description: "June 22, 2025: Training/Practice at The Fort Smith Recreation Center Gym, 3:30pm–5pm"
   },
 ];
 
@@ -74,7 +74,7 @@ const events: Event[] = [
 
 function formatDate(date: Date) {
   return date.toLocaleString('en-CA', {
-    year: 'numeric', month: 'short', day: 'numeric', hour: '2-digit', minute: '2-digit', hour12: false
+    year: 'numeric', month: 'short', day: 'numeric', hour: '2-digit', minute: '2-digit', hour12: true
   });
 }
 
