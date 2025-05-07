@@ -13,7 +13,7 @@ function adjustSidebarPadding() {
   const isMobile = window.matchMedia('(max-width: 900px)').matches;
   const isFixed = getComputedStyle(sidebar).position === 'fixed';
   if (isMobile && isFixed) {
-    const sidebarHeight = sidebar.offsetHeight;
+    const sidebarHeight = (sidebar as HTMLElement).offsetHeight;
     main.style.paddingBottom = sidebarHeight + 'px';
   } else {
     main.style.paddingBottom = '';
