@@ -14,6 +14,7 @@ const NavBar: React.FC = () => {
         <li><Link to="/benefits">Benefits</Link></li>
         <li><Link to="/regulations">Regulations</Link></li>
         <li><Link to="/gettingalicence">Getting a Licence</Link></li>
+        <li><Link to="/board">Board</Link></li>
         {/* Removed Store link */}
       </ul>
     </nav>

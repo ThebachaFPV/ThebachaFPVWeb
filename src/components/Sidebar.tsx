@@ -15,9 +15,6 @@ const Sidebar: React.FC = () => {
       <div style={{ background: 'var(--darker-blue)', padding: '1rem', borderRadius: 8, textAlign: 'center' }}>
         <p>Event calendar coming soon.</p>
       </div>
-      <div style={{ position: 'absolute', bottom: 0, left: 0, width: '100%', background: 'var(--darker-blue)', color: 'var(--white)', fontSize: '0.9rem', padding: '0.5rem 1rem', textAlign: 'center', borderTop: '1px solid var(--lighter-blue)' }}>
-        Last modified: May 6, 2025
-      </div>
     </aside>
   );
 };

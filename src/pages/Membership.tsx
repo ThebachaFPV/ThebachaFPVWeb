@@ -13,7 +13,7 @@ const Membership: React.FC = () => {
          learn, or participate in the league. Full members are pilots, and non- pilots are Associate Members but all are valued 
          contributors to our community.
       </p>
-      <img src={badge} alt="League Badge" style={{ width: '400px', borderRadius: 8, margin: '1rem 0' }} />
+      <img src={badge} alt="League Badge" style={{ width: '350px', borderRadius: 8, margin: '1rem 0' }} />
       <section style={{ margin: '2.5rem 0', textAlign: 'left' }}>
         <h2>Associate Membership Benefits</h2>
         <ul>

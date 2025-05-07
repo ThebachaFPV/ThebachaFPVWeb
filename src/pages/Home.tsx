@@ -7,7 +7,7 @@ import air75 from '../assets/product-images/betafpv-air75-brushless-whoop-_image
 const Home: React.FC = () => {
   return (
     <div style={{ textAlign: 'center', padding: '2rem', maxWidth: 900, margin: '0 auto' }}>
-      <img src={logo} alt="League Logo" style={{ width: '520px', marginBottom: '1.5rem', borderRadius: '12px' }} />
+      <img src={logo} alt="League Logo" className="home-logo" style={{ width: '520px', marginBottom: '1.5rem', borderRadius: '12px' }} />
       <h1>Thebacha FPV Racing League</h1>
       <h2 style={{ color: '#00A9D1', marginTop: '0.5rem' }}>Community. Education. Innovation.</h2>
       <p style={{ fontSize: '1.2rem', margin: '1.5rem 0' }}>
@@ -21,7 +21,7 @@ const Home: React.FC = () => {
           Our league is more than just racing. We provide technical education, mentorship, and opportunities for all ages and skill levels. We are committed to sustainable growth, safety, and regulatory compliance, and we work closely with local organizations, schools, and stakeholders to advance drone technology and STEM learning in the North.
         </p>
         <div style={{ textAlign: 'center', padding: '2rem', maxWidth: 900, margin: '0 auto' }}>
-        <img src={badge} alt="League Badge" style={{ width: '520px', borderRadius: 8, margin: '1rem 0' }} />
+        <img src={badge} className="home-badge" alt="League Badge" style={{  borderRadius: 8, margin: '1rem 0' }} />
         </div>
       </section>
 

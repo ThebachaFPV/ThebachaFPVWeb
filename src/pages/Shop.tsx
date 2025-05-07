@@ -5,7 +5,17 @@ const Store: React.FC = () => {
     <div style={{ padding: '2rem', color: 'var(--white)', maxWidth: 900, margin: '0 auto' }}>
       <h1>Equipment Access</h1>
       <p style={{ fontSize: '1.1rem', margin: '1.5rem 0' }}>
-        The purpose of this store is not to make a profit, but to provide members with access to carefully selected beginner and advanced FPV packages. These packages are designed to help new and experienced pilots get started or upgrade with the right equipment, at the best possible value, with league support and guidance.
+        The purpose of this shop is not sales, but to provide members with access 
+        to carefully selected beginner and advanced FPV packages. These packages 
+        are designed to help new and experienced pilots get started or upgrade with 
+        the right equipment, at the best possible value, with league support and guidance.
+    <p/><div className="rotor-village-div">
+        Currently We "Shop Candian 🇨🇦" and
+        
+        <img className="rotor-village-logo" src="src/assets/rotor_village_logo.webp" alt="RotorVillage Logo" style={{ width: '100px' }} />
+        <a href="https://rotorvillage.ca/" target="_blank" rel="noopener noreferrer">RotorVillage</a>
+         is our primary supplier. Their support is great and prices are very hard to beat.
+         </div>
       </p>
       <section style={{ margin: '2.5rem 0', textAlign: 'left' }}>
         <h2>Beginner Packages</h2>
