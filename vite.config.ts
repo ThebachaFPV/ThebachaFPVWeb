@@ -15,6 +15,10 @@ export default defineConfig({
           src: 'src/assets/product-images',
           dest: 'assets',
         },
+        {
+          src: 'src/assets/rotor_village_logo.webp',
+          dest: 'assets',
+        },
       ],
     }),
   ],
