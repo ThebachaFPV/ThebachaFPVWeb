@@ -5,6 +5,7 @@
     "strict": true,
     "module": "ESNext",
     "moduleResolution": "Node",
+    "lib": ["dom", "dom.iterable", "esnext"],
     "target": "ESNext",
     "skipLibCheck": true,
     "forceConsistentCasingInFileNames": true

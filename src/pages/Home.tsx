@@ -14,6 +14,21 @@ const Home: React.FC = () => {
         Thebacha FPV Racing League is a non-profit organization dedicated to building a vibrant, inclusive, and safe community for FPV drone racing in Northern Canada. We focus on education, skill development, and responsible drone use, while fostering connections between members, partners, and the broader community.
       </p>
 
+
+      {/* embed youtueb video here : https://youtu.be/43LvW2bs8Eo */}
+
+      <div style={{ margin: '2.5rem 0' }}>
+        <iframe
+          width="560"
+          height="315"
+          src="https://www.youtube.com/embed/43LvW2bs8Eo"
+          title="YouTube video player"
+          frameBorder="0"
+          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+          allowFullScreen
+        ></iframe>
+      </div>
+
       {/* About Us Section - Use badge as a symbol of community/achievement */}
       <section style={{ margin: '2.5rem 0', textAlign: 'left' }}>
         <h2>About Us</h2>

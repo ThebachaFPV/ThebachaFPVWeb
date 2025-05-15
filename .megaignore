@@ -1,0 +1,9 @@
+-:*.sb-????????-??????
+-:*.tmp
+-:*~.*
+-:.*
+-:desktop.ini
+-:Thumbs.db
+-:~*
+-p:node_modules/esbuild/bin/esbuild
+-p:node_modules/@esbuild/darwin-arm64/bin/esbuild

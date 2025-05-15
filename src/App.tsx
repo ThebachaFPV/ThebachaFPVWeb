@@ -11,6 +11,7 @@ import NavBar from './components/NavBar';
 import Footer from './components/Footer';
 import Sidebar from './components/Sidebar';
 import Board from './pages/Board';
+import Videos from './pages/Videos';
 
 const App: React.FC = () => {
   const [isMobile, setIsMobile] = useState(false);
@@ -37,6 +38,8 @@ const App: React.FC = () => {
           <Route path="/regulations" element={<Regulations />} />
           <Route path="/gettingalicence" element={<GettingALicence />} />
           <Route path="/board" element={<Board />} />
+          <Route path="/videos" element={<Videos />} />
+          {/* Add more routes as needed */}
         </Routes>
         {isMobile && <Sidebar />}
         <Footer />
