@@ -30,29 +30,40 @@ const Videos: React.FC = () => {
 
                 {/* Add the YouTube Playlist component where you want it to appear */}
                 <div className="youtube-section my-8">
-                    <h2 className="text-xl font-bold mb-4">Our League Videos Playlist</h2>
+                    <h2 className="text-xl font-bold mb-4">Some League Video Highlights Playlist</h2>
                     <EnhancedYouTubePlaylist
-                        playlistId="PL_P4Zu4rdnXVmNRM4migi5MZ4vA0o1490" // Replace with your actual playlist ID
+                        playlistId="PL_P4Zu4rdnXW7ON5nqDkvL2tfu3hy4RBr" // Replace with your actual playlist ID
                         height={480}
-                        autoplay={false}
-                        showControls={true}
+                        autoplay={0}
+                       // showControls={1}
                     />
                 </div>
             </section>
 
             <section style={{ margin: '2.5rem 0', textAlign: 'left' }}>
-                <h2>Learning Videos</h2>
-                <ul>
-                    <li>Annual membership with affordable fees and financial support for those in need</li>
-
-                </ul>
+    
+                  <div className="youtube-section my-8">
+                    <h2 className="text-xl font-bold mb-4">Learning Videos Playlist</h2>
+                    <EnhancedYouTubePlaylist
+                        playlistId="PL_P4Zu4rdnXXmYwmwW5OXaKTGs_hQHU_x" // Replace with your actual playlist ID
+                        height={480}
+                        autoplay={0}
+                       // showControls={1}
+                    />
+                </div>
             </section>
 
             <section style={{ margin: '2.5rem 0', textAlign: 'left' }}>
-                <h2>Gear Videos</h2>
-                <p>
-                    We host a variety of events throughout the year, including:
-                </p>
+
+              <div className="youtube-section my-8">
+                    <h2 className="text-xl font-bold mb-4">Gear Videos Playlist</h2>
+                    <EnhancedYouTubePlaylist
+                        playlistId="PL_P4Zu4rdnXW1Ww8i9T6Uj48OIHb4Cdm9" // Replace with your actual playlist ID
+                        height={480}
+                        autoplay={0}
+                       // showControls={1}
+                    />
+                </div>
 
             </section>
 

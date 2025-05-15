@@ -51,6 +51,43 @@ declare module 'react-youtube' {
   }
 }
 
+declare module 'youtube-player/dist/types' {
+  interface YouTubePlayer {
+    getVideoData(): { title: string };
+    getPlaylist(): string[];
+    getPlaylistIndex(): number;
+    getPlayerState(): number;
+    nextVideo(): void;
+    previousVideo(): void;
+    playVideo(): void;
+    pauseVideo(): void;
+  }
+}
+
+declare global {
+  namespace YT {
+    interface Player {
+      getPlaylist(): string[];
+      getPlaylistIndex(): number;
+      getVideoData(): { title: string };
+      getPlayerState(): number;
+      nextVideo(): void;
+      previousVideo(): void;
+      playVideo(): void;
+      pauseVideo(): void;
+    }
+
+    enum PlayerState {
+      UNSTARTED = -1,
+      ENDED = 0,
+      PLAYING = 1,
+      PAUSED = 2,
+      BUFFERING = 3,
+      CUED = 5,
+    }
+  }
+}
+
 declare module '*.png' {
   const value: string;
   export default value;

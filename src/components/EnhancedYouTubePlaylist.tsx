@@ -1,6 +1,7 @@
 import React, { useState, useCallback, useEffect } from 'react';
 import YouTube, { YouTubeProps, YouTubeEvent } from 'react-youtube';
-
+// import css
+import './EnhancedYouTubePlaylist.css'; // Import your CSS file for styling
 interface PlaylistVideo {
   title: string;
   videoId: string;
@@ -11,16 +12,16 @@ interface EnhancedYouTubePlaylistProps {
   playlistId: string;
   width?: string | number;
   height?: string | number;
-  autoplay?: boolean;
-  showControls?: boolean;
+  autoplay?: 0|1;
+  showControls?: 0|1;
 }
 
 const EnhancedYouTubePlaylist: React.FC<EnhancedYouTubePlaylistProps> = ({
   playlistId,
   width = '100%',
-  height = 390,
-  autoplay = false,
-  showControls = true,
+  height = '390px',
+  autoplay = 0,
+  showControls = 1,
 }) => {
   const [isLoading, setIsLoading] = useState<boolean>(true);
   const [player, setPlayer] = useState<YT.Player | null>(null);
@@ -37,19 +38,20 @@ const EnhancedYouTubePlaylist: React.FC<EnhancedYouTubePlaylistProps> = ({
       autoplay: autoplay ? 1 : 0,
       listType: 'playlist',
       list: playlistId,
+      //controls: `showControls` // Explicitly narrow the type to 0 or 1
     },
   };
 
   // Handle when the player is ready
   const onReady = (event: YouTubeEvent): void => {
-    const ytPlayer = event.target;
+    const ytPlayer = event.target as YT.Player; // Explicitly cast to YT.Player
     setPlayer(ytPlayer);
-    
+
     // Get playlist data if possible
     try {
       const playlistLength = ytPlayer.getPlaylist()?.length || 0;
       setTotalVideos(playlistLength);
-      
+
       // Get current video index and title
       const index = ytPlayer.getPlaylistIndex();
       setCurrentIndex(index);
@@ -57,7 +59,7 @@ const EnhancedYouTubePlaylist: React.FC<EnhancedYouTubePlaylistProps> = ({
     } catch (error) {
       console.error('Error accessing playlist data:', error);
     }
-    
+
     setIsLoading(false);
   };
 
@@ -82,7 +84,7 @@ const EnhancedYouTubePlaylist: React.FC<EnhancedYouTubePlaylistProps> = ({
 
   const playPause = useCallback((): void => {
     if (!player) return;
-    
+
     const playerState = player.getPlayerState();
     if (playerState === YT.PlayerState.PLAYING) {
       player.pauseVideo();
@@ -93,17 +95,13 @@ const EnhancedYouTubePlaylist: React.FC<EnhancedYouTubePlaylistProps> = ({
 
   return (
     <div className="enhanced-youtube-playlist">
-      <h2>YouTube Playlist Player</h2>
+      <h3>On YouTube...</h3>
       {isLoading && <div>Loading playlist...</div>}
-      
+
       <div className="video-container">
-        <YouTube
-          opts={opts}
-          onReady={onReady}
-          onStateChange={onStateChange}
-        />
+        <YouTube opts={opts} onReady={onReady} onStateChange={onStateChange} />
       </div>
-      
+
       {!isLoading && currentVideoTitle && (
         <div className="video-info mt-2">
           <h3 className="text-lg font-medium">{currentVideoTitle}</h3>
@@ -112,25 +110,25 @@ const EnhancedYouTubePlaylist: React.FC<EnhancedYouTubePlaylistProps> = ({
           </p>
         </div>
       )}
-      
+
       {showControls && player && (
         <div className="player-controls mt-3 flex justify-center space-x-4">
-          <button 
+          <button
             onClick={playPrevious}
             className="px-4 py-2 bg-gray-200 rounded hover:bg-gray-300 disabled:opacity-50"
             disabled={currentIndex === 0}
           >
             Previous
           </button>
-          
-          <button 
+
+          <button
             onClick={playPause}
             className="px-4 py-2 bg-blue-500 text-white rounded hover:bg-blue-600"
           >
             Play/Pause
           </button>
-          
-          <button 
+
+          <button
             onClick={playNext}
             className="px-4 py-2 bg-gray-200 rounded hover:bg-gray-300 disabled:opacity-50"
             disabled={currentIndex === totalVideos - 1}
