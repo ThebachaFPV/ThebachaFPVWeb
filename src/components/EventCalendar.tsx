@@ -44,13 +44,13 @@ const staticEvents: Event[] = [
   //   end: new Date('2025-05-11T17:00:00'),
   //   description: "May 11, 2025: Training/Practice at The Fort Smith Recreation Center Gym, 3:30pm–5pm"
   // },
-  {
-    title: "Training/Practice",
-    location: "The Fort Smith Recreation Center Gym",
-    start: new Date('2025-05-25T15:30:00'),
-    end: new Date('2025-05-25T17:00:00'),
-    description: "May 25, 2025: Training/Practice at The Fort Smith Recreation Center Gym, 3:30pm–5pm"
-  },
+  // {
+  //   title: "Training/Practice",
+  //   location: "The Fort Smith Recreation Center Gym",
+  //   start: new Date('2025-05-25T15:30:00'),
+  //   end: new Date('2025-05-25T17:00:00'),
+  //   description: "May 25, 2025: Training/Practice at The Fort Smith Recreation Center Gym, 3:30pm–5pm"
+  // },
   {
     title: "Training/Practice",
     location: "The Fort Smith Recreation Center Gym",
