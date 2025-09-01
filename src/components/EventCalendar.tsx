@@ -51,48 +51,80 @@ const staticEvents: Event[] = [
   //   end: new Date('2025-05-25T17:00:00'),
   //   description: "May 25, 2025: Training/Practice at The Fort Smith Recreation Center Gym, 3:30pm–5pm"
   // },
+  // {
+  //   title: "Training/Practice",
+  //   location: "The Fort Smith Recreation Center Gym",
+  //   start: new Date('2025-06-08T15:30:00'),
+  //   end: new Date('2025-06-08T17:00:00'),
+  //   description: "June 8, 2025: Training/Practice at The Fort Smith Recreation Center Gym, 3:30pm–5pm"
+  // },
+  // {
+  //   title: "Training/Practice",
+  //   location: "The Fort Smith Recreation Center Gym",
+  //   start: new Date('2025-06-22T15:30:00'),
+  //   end: new Date('2025-06-22T17:00:00'),
+  //   description: "June 22, 2025: Training/Practice at The Fort Smith Recreation Center Gym, 3:30pm–5pm"
+  // },
+  //  {
+  //   title: "Training/Practice",
+  //   location: "The Fort Smith Recreation Center Gym",
+  //   start: new Date('2025-07-06T15:30:00'),
+  //   end: new Date('2025-07-06T17:00:00'),
+  //   description: "July 6, 2025: Training/Practice at The Fort Smith Recreation Center Gym, 3:30pm–5pm"
+  // },
+  // {
+  //   title: "Training/Practice",
+  //   location: "The Fort Smith Recreation Center Gym",
+  //   start: new Date('2025-07-20T15:30:00'),
+  //   end: new Date('2025-07-20T17:00:00'),
+  //   description: "July 20, 2025: Training/Practice at The Fort Smith Recreation Center Gym, 3:30pm–5pm"
+  // },
+  // {
+  //   title: "Training/Practice",
+  //   location: "The Fort Smith Recreation Center Gym",
+  //   start: new Date('2025-08-03T15:30:00'),
+  //   end: new Date('2025-08-03T17:00:00'),
+  //   description: "August 3, 2025: Training/Practice at The Fort Smith Recreation Center Gym, 3:30pm–5pm"
+  // },
+  // {
+  //   title: "Training/Practice",
+  //   location: "The Fort Smith Recreation Center Gym",
+  //   start: new Date('2025-08-17T15:30:00'),
+  //   end: new Date('2025-08-17T17:00:00'),
+  //   description: "August 17, 2025: Training/Practice at The Fort Smith Recreation Center Gym, 3:30pm–5pm"
+  // },
+
+  // aug 31, sept 14, sept 28, oct 12, 
   {
     title: "Training/Practice",
     location: "The Fort Smith Recreation Center Gym",
-    start: new Date('2025-06-08T15:30:00'),
-    end: new Date('2025-06-08T17:00:00'),
-    description: "June 8, 2025: Training/Practice at The Fort Smith Recreation Center Gym, 3:30pm–5pm"
+    start: new Date('2025-08-31T15:30:00'),
+    end: new Date('2025-08-31T17:00:00'),
+    description: "August 31, 2025: Training/Practice at The Fort Smith Recreation Center Gym, 3:30pm–5pm"
   },
   {
     title: "Training/Practice",
     location: "The Fort Smith Recreation Center Gym",
-    start: new Date('2025-06-22T15:30:00'),
-    end: new Date('2025-06-22T17:00:00'),
-    description: "June 22, 2025: Training/Practice at The Fort Smith Recreation Center Gym, 3:30pm–5pm"
-  },
-   {
-    title: "Training/Practice",
-    location: "The Fort Smith Recreation Center Gym",
-    start: new Date('2025-07-06T15:30:00'),
-    end: new Date('2025-07-06T17:00:00'),
-    description: "July 6, 2025: Training/Practice at The Fort Smith Recreation Center Gym, 3:30pm–5pm"
+    start: new Date('2025-09-14T15:30:00'),
+    end: new Date('2025-09-14T17:00:00'),
+    description: "September 14, 2025: Training/Practice at The Fort Smith Recreation Center Gym, 3:30pm–5pm"
   },
   {
     title: "Training/Practice",
     location: "The Fort Smith Recreation Center Gym",
-    start: new Date('2025-07-20T15:30:00'),
-    end: new Date('2025-07-20T17:00:00'),
-    description: "July 20, 2025: Training/Practice at The Fort Smith Recreation Center Gym, 3:30pm–5pm"
+    start: new Date('2025-09-28T15:30:00'),
+    end: new Date('2025-09-28T17:00:00'),
+    description: "September 28, 2025: Training/Practice at The Fort Smith Recreation Center Gym, 3:30pm–5pm"
   },
   {
     title: "Training/Practice",
     location: "The Fort Smith Recreation Center Gym",
-    start: new Date('2025-08-03T15:30:00'),
-    end: new Date('2025-08-03T17:00:00'),
-    description: "August 3, 2025: Training/Practice at The Fort Smith Recreation Center Gym, 3:30pm–5pm"
+    start: new Date('2025-10-12T15:30:00'),
+    end: new Date('2025-10-12T17:00:00'),
+    description: "October 12, 2025: Training/Practice at The Fort Smith Recreation Center Gym, 3:30pm–5pm"
   },
-  {
-    title: "Training/Practice",
-    location: "The Fort Smith Recreation Center Gym",
-    start: new Date('2025-08-17T15:30:00'),
-    end: new Date('2025-08-17T17:00:00'),
-    description: "August 17, 2025: Training/Practice at The Fort Smith Recreation Center Gym, 3:30pm–5pm"
-  },
+
+
 ];
 
 const events: Event[] = [
