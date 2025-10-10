@@ -39,9 +39,14 @@ jobs:
           git config --local user.email "action@github.com"
           git config --local user.name "GitHub Action"
 
-          # Check if there are any changes in forecast images
-          if [ -n "$(git status --porcelain src/assets/forecast-images/)" ]; then
-            git add src/assets/forecast-images/
+          # Create forecast images directory if it doesn't exist
+          mkdir -p src/assets/forecast-images/
+
+          # Force add forecast images (override .gitignore)
+          git add --force src/assets/forecast-images/
+
+          # Check if there are any changes to commit
+          if ! git diff --staged --quiet; then
             git commit -m "Update weather forecast images - $(date '+%Y-%m-%d %H:%M:%S')"
             git push
           else

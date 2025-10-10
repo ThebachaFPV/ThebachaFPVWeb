@@ -1,0 +1,41 @@
+{
+	"version": "2.0.0",
+	"tasks": [
+		{
+			"label": "List GitHub Workflows",
+			"type": "shell",
+			"command": "gh workflow list",
+			"group": "build"
+		},
+		{
+			"label": "Check E2E Workflow Runs",
+			"type": "shell",
+			"command": "gh run list --workflow=\"E2E Tests with Screenshots\" --limit=5",
+			"group": "build"
+		},
+		{
+			"label": "View E2E Workflow Run Details",
+			"type": "shell",
+			"command": "gh run view 18412899633",
+			"group": "build"
+		},
+		{
+			"label": "View Job Details",
+			"type": "shell",
+			"command": "gh run view --job=52469583835",
+			"group": "build"
+		},
+		{
+			"label": "View Full Job Logs",
+			"type": "shell",
+			"command": "gh run view --log --job=52469583835",
+			"group": "build"
+		},
+		{
+			"label": "Check Recent Commits",
+			"type": "shell",
+			"command": "git log --oneline -5",
+			"group": "build"
+		}
+	]
+}
