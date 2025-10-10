@@ -66,6 +66,42 @@
 			"type": "shell",
 			"command": "gh run view --log --job=52475701297",
 			"group": "build"
+		},
+		{
+			"label": "Test Fixed Workflow",
+			"type": "shell",
+			"command": "gh workflow run \"E2E Tests with Screenshots\"",
+			"group": "build"
+		},
+		{
+			"label": "Trigger E2E Workflow Again",
+			"type": "shell",
+			"command": "gh workflow run \"E2E Tests with Screenshots\"",
+			"group": "build"
+		},
+		{
+			"label": "Check Latest Runs",
+			"type": "shell",
+			"command": "gh run list --workflow=\"E2E Tests with Screenshots\" --limit=3",
+			"group": "build"
+		},
+		{
+			"label": "Wait and Check Run Status",
+			"type": "shell",
+			"command": "sleep 60 && gh run list --workflow=\"E2E Tests with Screenshots\" --limit=2",
+			"group": "build"
+		},
+		{
+			"label": "Check Final Status",
+			"type": "shell",
+			"command": "gh run list --workflow=\"E2E Tests with Screenshots\" --limit=2",
+			"group": "build"
+		},
+		{
+			"label": "Check Recent Commits",
+			"type": "shell",
+			"command": "git fetch && git log --oneline -3",
+			"group": "build"
 		}
 	]
 }
