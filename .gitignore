@@ -2,3 +2,13 @@ node_modules/
 dist/
 .DS_Store
 task.txt
+
+# Playwright
+/test-results/
+/playwright-report/
+/blob-report/
+/playwright/.cache/
+# Keep screenshots for visual regression testing
+# screenshots/
+screenshots
+src/assets/forecast-images

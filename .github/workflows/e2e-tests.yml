@@ -1,0 +1,49 @@
+name: E2E Tests with Screenshots
+
+on:
+  schedule:
+    # Run daily at 2 AM UTC
+    - cron: "0 2 * * *"
+  workflow_dispatch: # Allow manual triggering
+
+jobs:
+  test:
+    timeout-minutes: 60
+    runs-on: ubuntu-latest
+
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          token: ${{ secrets.GITHUB_TOKEN }}
+
+      - uses: actions/setup-node@v4
+        with:
+          node-version: "18"
+          cache: "npm"
+
+      - name: Install dependencies
+        run: npm ci
+
+      - name: Install Playwright Browsers
+        run: npx playwright install --with-deps
+
+      - name: Build application
+        run: npm run build
+
+      - name: Run Playwright tests
+        run: npx playwright test
+
+      - name: Commit and push forecast images
+        if: always()
+        run: |
+          git config --local user.email "action@github.com"
+          git config --local user.name "GitHub Action"
+
+          # Check if there are any changes in forecast images
+          if [ -n "$(git status --porcelain src/assets/forecast-images/)" ]; then
+            git add src/assets/forecast-images/
+            git commit -m "Update weather forecast images - $(date '+%Y-%m-%d %H:%M:%S')"
+            git push
+          else
+            echo "No forecast image changes to commit"
+          fi

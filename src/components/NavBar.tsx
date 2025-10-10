@@ -6,9 +6,10 @@ const NavBar: React.FC = () => {
   console.log('NavBar rendered');
   return (
     <nav>
-      <img className='nav-logo' src={logo} alt="League Logo"  />  {/* Use the PNG logo */}
+      <img className='nav-logo' src={logo} alt="League Logo" />  {/* Use the PNG logo */}
       <ul>
         <li><Link to="/">Home</Link></li>
+        <li><Link to="/wx">Weather</Link></li>
         <li><Link to="/videos">Videos</Link></li>
         <li><Link to="/membership">Membership</Link></li>
         <li><Link to="/league">League</Link></li>
