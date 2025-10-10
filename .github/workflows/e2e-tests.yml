@@ -2,8 +2,8 @@ name: E2E Tests with Screenshots
 
 on:
   schedule:
-    # Run daily at 2 AM UTC
-    - cron: "0 2 * * *"
+    # Run daily at 12 PM UTC
+    - cron: "0 12 * * *"
   workflow_dispatch: # Allow manual triggering
 
 jobs:
