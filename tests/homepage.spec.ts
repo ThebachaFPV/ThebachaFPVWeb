@@ -340,99 +340,182 @@ test.describe('ThebachaFPV Weather Forecasts', () => {
 
     // });
 
-    test('YSM OkToFly.com', async ({ page }) => {
+    // test('YSM OkToFly.com', async ({ page }) => {
 
-        await page.goto('https://oktofly.com/loc/60.004541,-111.823387');
-        await page.waitForLoadState('networkidle');
-        await page.waitForTimeout(500);
+    //     await page.goto('https://oktofly.com/loc/60.004541,-111.823387');
+    //     await page.waitForLoadState('networkidle');
+    //     await page.waitForTimeout(500);
 
-        // accept the licence:
-        await page.click('#acceptlicense');
-        await page.waitForTimeout(500);
+    //     // accept the licence:
+    //     await page.click('#acceptlicense');
+    //     await page.waitForTimeout(500);
 
-        // Move mouse to far left of screen to avoid hover effects
-        await page.mouse.move(0, 0);
-        await page.waitForTimeout(100); // Small delay for hover effects to clear
-
-
-
-        await page.locator('#time_label').first().waitFor();
+    //     // Move mouse to far left of screen to avoid hover effects
+    //     await page.mouse.move(0, 0);
+    //     await page.waitForTimeout(100); // Small delay for hover effects to clear
 
 
 
-        const header = page.locator('#date_selector_canvas');
-        await header.screenshot({
-            path:
-                'src/assets/forecast-images/YSM_OkTofly_header.png',
-        });
+    //     await page.locator('#time_label').first().waitFor();
 
-        const container_temperature = page.locator('#timeslot_container_0');
-        await container_temperature.screenshot({
-            path:
-                'src/assets/forecast-images/YSM_OkTofly_T0.png',
-        });
 
-        // const container_precip = page.locator('#timeslot_container_1');
-        // await container_precip.screenshot({
-        //     path:
-        //         'src/assets/forecast-images/YSM_OkTofly_T1.png',
-        // });
 
-        // const container_wind = page.locator('#timeslot_container_2');
-        // await container_wind.screenshot({
-        //     path:
-        //         'src/assets/forecast-images/YSM_OkTofly_T2.png',
-        // });
-    });
+    //     const header = page.locator('#date_selector_canvas');
+    //     await header.screenshot({
+    //         path:
+    //             'src/assets/forecast-images/YSM_OkTofly_header.png',
+    //     });
 
-    test('YHY OkToFly.com', async ({ page }) => {
+    //     const container_temperature = page.locator('#timeslot_container_0');
+    //     await container_temperature.screenshot({
+    //         path:
+    //             'src/assets/forecast-images/YSM_OkTofly_T0.png',
+    //     });
 
-        await page.goto('https://oktofly.com/loc/60.004541,-115.779971');
-        await page.waitForLoadState('networkidle');
-        await page.waitForTimeout(500);
+    //     // const container_precip = page.locator('#timeslot_container_1');
+    //     // await container_precip.screenshot({
+    //     //     path:
+    //     //         'src/assets/forecast-images/YSM_OkTofly_T1.png',
+    //     // });
 
-        // accept the licence:
-        await page.click('#acceptlicense');
-        await page.waitForTimeout(500);
+    //     // const container_wind = page.locator('#timeslot_container_2');
+    //     // await container_wind.screenshot({
+    //     //     path:
+    //     //         'src/assets/forecast-images/YSM_OkTofly_T2.png',
+    //     // });
+    // });
 
-        // Move mouse to far left of screen to avoid hover effects
-        await page.mouse.move(0, 0);
-        await page.waitForTimeout(100); // Small delay for hover effects to clear
+    // test('YHY OkToFly.com', async ({ page }) => {
 
-        await page.locator('#time_label').first().waitFor();
+    //     await page.goto('https://oktofly.com/loc/60.004541,-115.779971');
+    //     await page.waitForLoadState('networkidle');
+    //     await page.waitForTimeout(500);
 
-        const header = page.locator('#date_selector_canvas');
-        await header.screenshot({
-            path:
-                'src/assets/forecast-images/YHY_OkTofly_header.png',
-        });
+    //     // accept the licence:
+    //     await page.click('#acceptlicense');
+    //     await page.waitForTimeout(500);
 
-        const container_temperature = page.locator('#timeslot_container_0');
-        await container_temperature.screenshot({
-            path:
-                'src/assets/forecast-images/YHY_OkTofly_T0.png',
-        });
+    //     // Move mouse to far left of screen to avoid hover effects
+    //     await page.mouse.move(0, 0);
+    //     await page.waitForTimeout(100); // Small delay for hover effects to clear
 
-        // const container_precip = page.locator('#timeslot_container_1');
-        // await container_precip.screenshot({
-        //     path:
-        //         'src/assets/forecast-images/YHY_OkTofly_T1.png',
-        // });
+    //     await page.locator('#time_label').first().waitFor();
 
-        // const container_wind = page.locator('#timeslot_container_2');
-        // await container_wind.screenshot({
-        //     path:
-        //         'src/assets/forecast-images/YHY_OkTofly_T2.png',
-        // });
-    });
+    //     const header = page.locator('#date_selector_canvas');
+    //     await header.screenshot({
+    //         path:
+    //             'src/assets/forecast-images/YHY_OkTofly_header.png',
+    //     });
+
+    //     const container_temperature = page.locator('#timeslot_container_0');
+    //     await container_temperature.screenshot({
+    //         path:
+    //             'src/assets/forecast-images/YHY_OkTofly_T0.png',
+    //     });
+
+    //     // const container_precip = page.locator('#timeslot_container_1');
+    //     // await container_precip.screenshot({
+    //     //     path:
+    //     //         'src/assets/forecast-images/YHY_OkTofly_T1.png',
+    //     // });
+
+    //     // const container_wind = page.locator('#timeslot_container_2');
+    //     // await container_wind.screenshot({
+    //     //     path:
+    //     //         'src/assets/forecast-images/YHY_OkTofly_T2.png',
+    //     // });
+    // });
     // smith https://oktofly.com/loc/60.004541,-111.823387
     // hay https://oktofly.com/loc/60.004541,-115.779971
 
 
+    test('YSM drone map', async ({ page }) => {
+        // goto the page
+        await page.goto('https://nrc.canada.ca/en/drone-tool/flightMap.php');
+        await page.waitForLoadState('networkidle');
+
+        //open the map style
+
+        await page.getByRole('button', { name: 'Change map style' }).click();
+        await page.waitForTimeout(500);
+        // select the sattelite layer:
+        await page.getByRole('menuitemradio', { name: 'Satellite' }).click();
+        await page.waitForLoadState('networkidle');
+        await page.waitForTimeout(500);
+        await page.getByRole('tab', { name: /Go to Operation Details tab/i }).click();
+        await page.waitForTimeout(500);
+        await page.check('#MICRO'); // specific for radio/checkbox
+
+        await page.getByRole('tab', { name: /Go to Map Controls tab/i }).click();
+        await page.waitForTimeout(500);
+        await page.check('#zctl');
 
 
+        await page.click('a[title="Map Centre"]');
+        await page.waitForTimeout(500);
+        await page.click('#zoomKbd');
+        // 60.00552&lon=-111.88494
+        await page.fill('#zoomLatNumeric', '60.0055');
+        await page.fill('#zoomLonNumeric', '-111.8849');
+        await page.waitForTimeout(500);
+        await page.locator('#setZoomKbdButn').click();
+        await page.waitForTimeout(500);
 
+        // close the options:
+        await page.click('a[title="Map Centre"]');
 
+        // zoom in
+        await page.click('button[title="Zoom in"]');
+        await page.click('button[title="Zoom in"]');
+        // wait for stable
+        await page.waitForLoadState('networkidle');
+        await page.waitForTimeout(500);
+        //screencap
+        await page.screenshot({
+            path: 'src/assets/forecast-images/YSM_NRCAN_DroneMap1.png',
+            fullPage: true
+        });
+        await page.click('button[title="Zoom out"]');
+        await page.waitForLoadState('networkidle');
+        await page.waitForTimeout(500);
+        //screencap
+        await page.screenshot({
+            path: 'src/assets/forecast-images/YSM_NRCAN_DroneMap2.png',
+            fullPage: true
+        });
+        await page.waitForTimeout(500);
+
+        await page.click('a[title="Map Centre"]');
+        await page.waitForTimeout(500);
+        await page.click('#zoomKbd');
+        // lat=60.8234&lon=-115.7629
+        await page.fill('#zoomLatNumeric', '60.8234');
+        await page.fill('#zoomLonNumeric', '-115.7629');
+        await page.waitForTimeout(500);
+        await page.locator('#setZoomKbdButn').click();
+        await page.waitForTimeout(500);
+        await page.click('button[title="Zoom in"]');
+        await page.waitForLoadState('networkidle');
+
+        // close the options:
+        await page.click('a[title="Map Centre"]');
+        await page.waitForLoadState('networkidle');
+        await page.waitForTimeout(500);
+        //screencap
+        await page.screenshot({
+            path: 'src/assets/forecast-images/YHY_NRCAN_DroneMap1.png',
+            fullPage: true
+        });
+        await page.click('button[title="Zoom out"]');
+        await page.waitForLoadState('networkidle');
+        await page.waitForTimeout(500);
+        //screencap
+        await page.screenshot({
+            path: 'src/assets/forecast-images/YHY_NRCAN_DroneMap2.png',
+            fullPage: true
+        });
+        await page.waitForTimeout(500);
+    });
 
 });
 
