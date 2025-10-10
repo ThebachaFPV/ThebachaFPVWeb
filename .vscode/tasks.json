@@ -36,6 +36,36 @@
 			"type": "shell",
 			"command": "git log --oneline -5",
 			"group": "build"
+		},
+		{
+			"label": "Trigger E2E Workflow",
+			"type": "shell",
+			"command": "gh workflow run \"E2E Tests with Screenshots\"",
+			"group": "build"
+		},
+		{
+			"label": "Check Latest Workflow Runs",
+			"type": "shell",
+			"command": "gh run list --workflow=\"E2E Tests with Screenshots\" --limit=3",
+			"group": "build"
+		},
+		{
+			"label": "Watch Workflow Progress",
+			"type": "shell",
+			"command": "gh run watch 18414742090",
+			"group": "build"
+		},
+		{
+			"label": "Check Workflow Status",
+			"type": "shell",
+			"command": "gh run list --workflow=\"E2E Tests with Screenshots\" --limit=2",
+			"group": "build"
+		},
+		{
+			"label": "View Failed Job Logs",
+			"type": "shell",
+			"command": "gh run view --log --job=52475701297",
+			"group": "build"
 		}
 	]
 }
