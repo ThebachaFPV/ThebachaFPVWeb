@@ -19,6 +19,10 @@ export default defineConfig({
           src: 'src/assets/rotor_village_logo.webp',
           dest: 'assets',
         },
+        {
+          src: 'src/assets/forecast-images',
+          dest: 'assets',
+        },
       ],
     }),
   ],
