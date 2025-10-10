@@ -25,8 +25,25 @@ const Weather: React.FC = () => (
       <img src="/assets/forecast-images/YSM_RDPS_precip.png"></img>
       <img src="/assets/forecast-images/YSM_RDPS_wind.png"></img>
       <img src="/assets/forecast-images/YSM_RDPS_llwind.png"></img>
-
+      <h2>Ok to fly? - Fort Smith</h2>
+      <h4>Data Courtesy of OkToFly.com:
+        <a target="_blank" href="https://oktofly.com/loc/60.004541,-111.823387" style={{ color: '#0066cc', textDecoration: 'underline' }}>OkToFly.com</a></h4>
+      <img src="/assets/forecast-images/YSM_OkTofly_header.png"></img>
+      <img src="/assets/forecast-images/YSM_OkTofly_T0.png"></img>
+      {/* <img src="/assets/forecast-images/YSM_OkTofly_T1.png"></img>
+      <img src="/assets/forecast-images/YSM_OkTofly_T2.png"></img> */}
     </section>
+
+
+
+
+
+
+
+
+
+
+
     <section style={{ margin: '2.5rem 0', textAlign: 'left' }}>
       <h2>Weather for Flying Hay River</h2>
 
@@ -46,7 +63,13 @@ const Weather: React.FC = () => (
       <img src="/assets/forecast-images/YHY_RDPS_precip.png"></img>
       <img src="/assets/forecast-images/YHY_RDPS_wind.png"></img>
       <img src="/assets/forecast-images/YHY_RDPS_llwind.png"></img>
-
+      <h2>Ok to fly? - Hay River</h2>
+      <h4>Data Courtesy of OkToFly.com:
+        <a target="_blank" href="https://oktofly.com/loc/60.004541,-115.779971" style={{ color: '#0066cc', textDecoration: 'underline' }}>OkToFly.com</a></h4>
+      <img src="/assets/forecast-images/YHY_OkTofly_header.png"></img>
+      <img src="/assets/forecast-images/YHY_OkTofly_T0.png"></img>
+      {/* <img src="/assets/forecast-images/YHY_OkTofly_T1.png"></img>
+      <img src="/assets/forecast-images/YHY_OkTofly_T2.png"></img> */}
     </section>
   </div>
 );
