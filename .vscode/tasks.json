@@ -108,6 +108,33 @@
 			"type": "shell",
 			"command": "gh run list --workflow=\"E2E Tests with Screenshots\" --limit=2",
 			"group": "build"
+		},
+		{
+			"label": "Debug Last Workflow Run",
+			"type": "shell",
+			"command": "gh run list --limit 1",
+			"args": [],
+			"isBackground": false,
+			"problemMatcher": [],
+			"group": "none"
+		},
+		{
+			"label": "Get Workflow Logs",
+			"type": "shell",
+			"command": "gh run view 18431012123 --log",
+			"args": [],
+			"isBackground": false,
+			"problemMatcher": [],
+			"group": "none"
+		},
+		{
+			"label": "Check Deployment Status",
+			"type": "shell",
+			"command": "gh run view 18431012123 --json conclusion",
+			"args": [],
+			"isBackground": false,
+			"problemMatcher": [],
+			"group": "none"
 		}
 	]
 }

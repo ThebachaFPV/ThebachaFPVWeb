@@ -69,362 +69,362 @@ import { test, expect } from '@playwright/test';
 // });
 
 test.describe('ThebachaFPV Weather Forecasts', () => {
-    // test('YSM 2day HRDPS', async ({ page }) => {
-    //     // go the page
-    //     await page.goto('https://spotwx.com/products/grib_index.php?model=hrdps_continental&lat=59.9825&lon=-111.59912&tz=America/Edmonton&label=ThebachaFPV%20-%20Fort%20Smith');
-    //     //wait for render
-    //     await page.waitForLoadState('networkidle');
-    //     // make sure correct page is loaded
-    //     await page.waitForTimeout(500);
-    //     await page.locator('.highcharts-title:has-text("HRDPS Continental forecast for ThebachaFPV")').waitFor();
-
-
-
-    //     const header = page.locator('#container_title');
-    //     await header.screenshot({
-    //         path:
-    //             'src/assets/forecast-images/YSM_HRDPS_header.png',
-    //     });
-
-    //     const container_temperature = page.locator('#container_temperature');
-    //     await container_temperature.screenshot({
-    //         path:
-    //             'src/assets/forecast-images/YSM_HRDPS_temp.png',
-    //     });
-
-    //     const container_precip = page.locator('#container_precip');
-    //     await container_precip.screenshot({
-    //         path:
-    //             'src/assets/forecast-images/YSM_HRDPS_precip.png',
-    //     });
-
-    //     const container_wind = page.locator('#container_wind');
-    //     await container_wind.screenshot({
-    //         path:
-    //             'src/assets/forecast-images/YSM_HRDPS_wind.png',
-    //     });
-
-    //     const container_llwind = page.locator('#container_llwind');
-    //     await container_llwind.screenshot({
-    //         path:
-    //             'src/assets/forecast-images/YSM_HRDPS_llwind.png',
-    //     });
-
-
-
-    //     /**************** */
-    //     await page.goto('https://spotwx.com/products/grib_index.php?model=nam_awphys&lat=60.00552&lon=-111.88494&tz=America/Yellowknife&label=ThebachaFPV%20-%20Fort%20Smith');
-    //     await page.waitForLoadState('networkidle');
-    //     await page.waitForTimeout(500);
-    //     await page.locator('.highcharts-title:has-text("NAM forecast for ThebachaFPV")').waitFor();
-
-    //     // Take a full page screenshot
-    //     await page.screenshot({
-    //         path: 'src/assets/forecast-images/YSM_NAM.png',
-    //         omitBackground: true,
-    //         fullPage: true
-    //     });
-
-    // });
-    // test('YSM 3.5day RDPS', async ({ page }) => {
+    test('YSM 2day HRDPS', async ({ page }) => {
+        // go the page
+        await page.goto('https://spotwx.com/products/grib_index.php?model=hrdps_continental&lat=59.9825&lon=-111.59912&tz=America/Edmonton&label=ThebachaFPV%20-%20Fort%20Smith');
+        //wait for render
+        await page.waitForLoadState('networkidle');
+        // make sure correct page is loaded
+        await page.waitForTimeout(500);
+        await page.locator('.highcharts-title:has-text("HRDPS Continental forecast for ThebachaFPV")').waitFor();
+
+
+
+        const header = page.locator('#container_title');
+        await header.screenshot({
+            path:
+                'src/assets/forecast-images/YSM_HRDPS_header.png',
+        });
+
+        const container_temperature = page.locator('#container_temperature');
+        await container_temperature.screenshot({
+            path:
+                'src/assets/forecast-images/YSM_HRDPS_temp.png',
+        });
+
+        const container_precip = page.locator('#container_precip');
+        await container_precip.screenshot({
+            path:
+                'src/assets/forecast-images/YSM_HRDPS_precip.png',
+        });
+
+        const container_wind = page.locator('#container_wind');
+        await container_wind.screenshot({
+            path:
+                'src/assets/forecast-images/YSM_HRDPS_wind.png',
+        });
+
+        const container_llwind = page.locator('#container_llwind');
+        await container_llwind.screenshot({
+            path:
+                'src/assets/forecast-images/YSM_HRDPS_llwind.png',
+        });
+
+
+
+        /**************** */
+        await page.goto('https://spotwx.com/products/grib_index.php?model=nam_awphys&lat=60.00552&lon=-111.88494&tz=America/Yellowknife&label=ThebachaFPV%20-%20Fort%20Smith');
+        await page.waitForLoadState('networkidle');
+        await page.waitForTimeout(500);
+        await page.locator('.highcharts-title:has-text("NAM forecast for ThebachaFPV")').waitFor();
+
+        // Take a full page screenshot
+        await page.screenshot({
+            path: 'src/assets/forecast-images/YSM_NAM.png',
+            omitBackground: true,
+            fullPage: true
+        });
+
+    });
+    test('YSM 3.5day RDPS', async ({ page }) => {
 
-    //     await page.goto('https://spotwx.com/products/grib_index.php?model=rdps_10km&lat=60.00552&lon=-111.88494&tz=America/Yellowknife&label=ThebachaFPV%20-%20Fort%20Smith');
-    //     await page.waitForLoadState('networkidle');
-    //     await page.waitForTimeout(500);
-    //     await page.locator('.highcharts-title:has-text("RDPS forecast for ThebachaFPV")').waitFor();
-
-
-
-    //     const header = page.locator('#container_title');
-    //     await header.screenshot({
-    //         path:
-    //             'src/assets/forecast-images/YSM_RDPS_header.png',
-    //     });
+        await page.goto('https://spotwx.com/products/grib_index.php?model=rdps_10km&lat=60.00552&lon=-111.88494&tz=America/Yellowknife&label=ThebachaFPV%20-%20Fort%20Smith');
+        await page.waitForLoadState('networkidle');
+        await page.waitForTimeout(500);
+        await page.locator('.highcharts-title:has-text("RDPS forecast for ThebachaFPV")').waitFor();
+
+
+
+        const header = page.locator('#container_title');
+        await header.screenshot({
+            path:
+                'src/assets/forecast-images/YSM_RDPS_header.png',
+        });
 
-    //     const container_temperature = page.locator('#container_temperature');
-    //     await container_temperature.screenshot({
-    //         path:
-    //             'src/assets/forecast-images/YSM_RDPS_temp.png',
-    //     });
-
-    //     const container_precip = page.locator('#container_precip');
-    //     await container_precip.screenshot({
-    //         path:
-    //             'src/assets/forecast-images/YSM_RDPS_precip.png',
-    //     });
-
-    //     const container_wind = page.locator('#container_wind');
-    //     await container_wind.screenshot({
-    //         path:
-    //             'src/assets/forecast-images/YSM_RDPS_wind.png',
-    //     });
-
-    //     const container_llwind = page.locator('#container_llwind');
-    //     await container_llwind.screenshot({
-    //         path:
-    //             'src/assets/forecast-images/YSM_RDPS_llwind.png',
-    //     });
-
-
-
-    //     /**************** */
-    //     await page.goto('https://spotwx.com/products/grib_index.php?model=nam_awphys&lat=60.00552&lon=-111.88494&tz=America/Yellowknife&label=ThebachaFPV%20-%20Fort%20Smith');
-    //     await page.waitForLoadState('networkidle');
-    //     await page.waitForTimeout(500);
-    //     await page.locator('.highcharts-title:has-text("NAM forecast for ThebachaFPV")').waitFor();
+        const container_temperature = page.locator('#container_temperature');
+        await container_temperature.screenshot({
+            path:
+                'src/assets/forecast-images/YSM_RDPS_temp.png',
+        });
+
+        const container_precip = page.locator('#container_precip');
+        await container_precip.screenshot({
+            path:
+                'src/assets/forecast-images/YSM_RDPS_precip.png',
+        });
+
+        const container_wind = page.locator('#container_wind');
+        await container_wind.screenshot({
+            path:
+                'src/assets/forecast-images/YSM_RDPS_wind.png',
+        });
+
+        const container_llwind = page.locator('#container_llwind');
+        await container_llwind.screenshot({
+            path:
+                'src/assets/forecast-images/YSM_RDPS_llwind.png',
+        });
+
+
+
+        /**************** */
+        await page.goto('https://spotwx.com/products/grib_index.php?model=nam_awphys&lat=60.00552&lon=-111.88494&tz=America/Yellowknife&label=ThebachaFPV%20-%20Fort%20Smith');
+        await page.waitForLoadState('networkidle');
+        await page.waitForTimeout(500);
+        await page.locator('.highcharts-title:has-text("NAM forecast for ThebachaFPV")').waitFor();
 
-    //     // Take a full page screenshot
-    //     await page.screenshot({
-    //         path: 'src/assets/forecast-images/YSM_NAM.png',
-    //         omitBackground: true,
-    //         fullPage: true
-    //     });
+        // Take a full page screenshot
+        await page.screenshot({
+            path: 'src/assets/forecast-images/YSM_NAM.png',
+            omitBackground: true,
+            fullPage: true
+        });
 
-    // });
+    });
 
-    // test('YSM 3.5 day NAM', async ({ page }) => {
+    test('YSM 3.5 day NAM', async ({ page }) => {
 
-    //     await page.goto('https://spotwx.com/products/grib_index.php?model=nam_awphys&lat=60.00552&lon=-111.88494&tz=America/Yellowknife&label=ThebachaFPV%20-%20Fort%20Smith');
-    //     await page.waitForLoadState('networkidle');
-    //     await page.waitForTimeout(500);
-    //     await page.locator('.highcharts-title:has-text("NAM forecast for ThebachaFPV")').waitFor();
+        await page.goto('https://spotwx.com/products/grib_index.php?model=nam_awphys&lat=60.00552&lon=-111.88494&tz=America/Yellowknife&label=ThebachaFPV%20-%20Fort%20Smith');
+        await page.waitForLoadState('networkidle');
+        await page.waitForTimeout(500);
+        await page.locator('.highcharts-title:has-text("NAM forecast for ThebachaFPV")').waitFor();
 
 
-
+
 
-    //     const header = page.locator('#container_title');
-    //     await header.screenshot({
-    //         path:
-    //             'src/assets/forecast-images/YSM_NAM_header.png',
-    //     });
+        const header = page.locator('#container_title');
+        await header.screenshot({
+            path:
+                'src/assets/forecast-images/YSM_NAM_header.png',
+        });
 
-    //     const container_temperature = page.locator('#container_temperature');
-    //     await container_temperature.screenshot({
-    //         path:
-    //             'src/assets/forecast-images/YSM_NAM_temp.png',
-    //     });
+        const container_temperature = page.locator('#container_temperature');
+        await container_temperature.screenshot({
+            path:
+                'src/assets/forecast-images/YSM_NAM_temp.png',
+        });
 
-    //     const container_precip = page.locator('#container_precip');
-    //     await container_precip.screenshot({
-    //         path:
-    //             'src/assets/forecast-images/YSM_NAM_precip.png',
-    //     });
+        const container_precip = page.locator('#container_precip');
+        await container_precip.screenshot({
+            path:
+                'src/assets/forecast-images/YSM_NAM_precip.png',
+        });
 
-    //     const container_wind = page.locator('#container_wind');
-    //     await container_wind.screenshot({
-    //         path:
-    //             'src/assets/forecast-images/YSM_NAM_wind.png',
-    //     });
-
-    //     const container_llwind = page.locator('#container_llwind');
-    //     await container_llwind.screenshot({
-    //         path:
-    //             'src/assets/forecast-images/YSM_NAM_llwind.png',
-    //     });
-
-
-
-    // });
+        const container_wind = page.locator('#container_wind');
+        await container_wind.screenshot({
+            path:
+                'src/assets/forecast-images/YSM_NAM_wind.png',
+        });
+
+        const container_llwind = page.locator('#container_llwind');
+        await container_llwind.screenshot({
+            path:
+                'src/assets/forecast-images/YSM_NAM_llwind.png',
+        });
+
+
+
+    });
 
 
-    // test('YHY 2day HRDPS', async ({ page }) => {
-    //     // go the page
-    //     await page.goto('https://spotwx.com/products/grib_index.php?model=hrdps_continental&lat=60.82349&lon=-115.76294&tz=America/Yellowknife&label=ThebachaFPV%20-%20Hay%20River');
-    //     //wait for render
-    //     await page.waitForLoadState('networkidle');
-    //     // make sure correct page is loaded
-    //     await page.waitForTimeout(500);
-    //     await page.locator('.highcharts-title:has-text("HRDPS Continental forecast for ThebachaFPV")').waitFor();
-
-
-
-    //     const header = page.locator('#container_title');
-    //     await header.screenshot({
-    //         path:
-    //             'src/assets/forecast-images/YHY_HRDPS_header.png',
-    //     });
+    test('YHY 2day HRDPS', async ({ page }) => {
+        // go the page
+        await page.goto('https://spotwx.com/products/grib_index.php?model=hrdps_continental&lat=60.82349&lon=-115.76294&tz=America/Yellowknife&label=ThebachaFPV%20-%20Hay%20River');
+        //wait for render
+        await page.waitForLoadState('networkidle');
+        // make sure correct page is loaded
+        await page.waitForTimeout(500);
+        await page.locator('.highcharts-title:has-text("HRDPS Continental forecast for ThebachaFPV")').waitFor();
+
+
+
+        const header = page.locator('#container_title');
+        await header.screenshot({
+            path:
+                'src/assets/forecast-images/YHY_HRDPS_header.png',
+        });
 
-    //     const container_temperature = page.locator('#container_temperature');
-    //     await container_temperature.screenshot({
-    //         path:
-    //             'src/assets/forecast-images/YHY_HRDPS_temp.png',
-    //     });
+        const container_temperature = page.locator('#container_temperature');
+        await container_temperature.screenshot({
+            path:
+                'src/assets/forecast-images/YHY_HRDPS_temp.png',
+        });
 
-    //     const container_precip = page.locator('#container_precip');
-    //     await container_precip.screenshot({
-    //         path:
-    //             'src/assets/forecast-images/YHY_HRDPS_precip.png',
-    //     });
+        const container_precip = page.locator('#container_precip');
+        await container_precip.screenshot({
+            path:
+                'src/assets/forecast-images/YHY_HRDPS_precip.png',
+        });
 
-    //     const container_wind = page.locator('#container_wind');
-    //     await container_wind.screenshot({
-    //         path:
-    //             'src/assets/forecast-images/YHY_HRDPS_wind.png',
-    //     });
+        const container_wind = page.locator('#container_wind');
+        await container_wind.screenshot({
+            path:
+                'src/assets/forecast-images/YHY_HRDPS_wind.png',
+        });
 
-    //     const container_llwind = page.locator('#container_llwind');
-    //     await container_llwind.screenshot({
-    //         path:
-    //             'src/assets/forecast-images/YHY_HRDPS_llwind.png',
-    //     });
+        const container_llwind = page.locator('#container_llwind');
+        await container_llwind.screenshot({
+            path:
+                'src/assets/forecast-images/YHY_HRDPS_llwind.png',
+        });
 
 
 
-    //     /**************** */
-    //     await page.goto('https://spotwx.com/products/grib_index.php?model=nam_awphys&lat=60.00552&lon=-111.88494&tz=America/Yellowknife&label=ThebachaFPV%20-%20Fort%20Smith');
-    //     await page.waitForLoadState('networkidle');
-    //     await page.waitForTimeout(500);
-    //     await page.locator('.highcharts-title:has-text("NAM forecast for ThebachaFPV")').waitFor();
+        /**************** */
+        await page.goto('https://spotwx.com/products/grib_index.php?model=nam_awphys&lat=60.00552&lon=-111.88494&tz=America/Yellowknife&label=ThebachaFPV%20-%20Fort%20Smith');
+        await page.waitForLoadState('networkidle');
+        await page.waitForTimeout(500);
+        await page.locator('.highcharts-title:has-text("NAM forecast for ThebachaFPV")').waitFor();
 
-    //     // Take a full page screenshot
-    //     await page.screenshot({
-    //         path: 'src/assets/forecast-images/YHY_NAM.png',
-    //         omitBackground: true,
-    //         fullPage: true
-    //     });
+        // Take a full page screenshot
+        await page.screenshot({
+            path: 'src/assets/forecast-images/YHY_NAM.png',
+            omitBackground: true,
+            fullPage: true
+        });
 
-    // });
-    // test('YHY 3.5day RDPS', async ({ page }) => {
+    });
+    test('YHY 3.5day RDPS', async ({ page }) => {
 
-    //     await page.goto('https://spotwx.com/products/grib_index.php?model=rdps_10km&lat=60.82349&lon=-115.76294&tz=America/Yellowknife&label=ThebachaFPV%20-%20Hay%20River');
-    //     await page.waitForLoadState('networkidle');
-    //     await page.waitForTimeout(500);
-    //     await page.locator('.highcharts-title:has-text("RDPS forecast for ThebachaFPV")').waitFor();
+        await page.goto('https://spotwx.com/products/grib_index.php?model=rdps_10km&lat=60.82349&lon=-115.76294&tz=America/Yellowknife&label=ThebachaFPV%20-%20Hay%20River');
+        await page.waitForLoadState('networkidle');
+        await page.waitForTimeout(500);
+        await page.locator('.highcharts-title:has-text("RDPS forecast for ThebachaFPV")').waitFor();
 
 
 
-    //     const header = page.locator('#container_title');
-    //     await header.screenshot({
-    //         path:
-    //             'src/assets/forecast-images/YHY_RDPS_header.png',
-    //     });
+        const header = page.locator('#container_title');
+        await header.screenshot({
+            path:
+                'src/assets/forecast-images/YHY_RDPS_header.png',
+        });
 
-    //     const container_temperature = page.locator('#container_temperature');
-    //     await container_temperature.screenshot({
-    //         path:
-    //             'src/assets/forecast-images/YHY_RDPS_temp.png',
-    //     });
+        const container_temperature = page.locator('#container_temperature');
+        await container_temperature.screenshot({
+            path:
+                'src/assets/forecast-images/YHY_RDPS_temp.png',
+        });
 
-    //     const container_precip = page.locator('#container_precip');
-    //     await container_precip.screenshot({
-    //         path:
-    //             'src/assets/forecast-images/YHY_RDPS_precip.png',
-    //     });
+        const container_precip = page.locator('#container_precip');
+        await container_precip.screenshot({
+            path:
+                'src/assets/forecast-images/YHY_RDPS_precip.png',
+        });
 
-    //     const container_wind = page.locator('#container_wind');
-    //     await container_wind.screenshot({
-    //         path:
-    //             'src/assets/forecast-images/YHY_RDPS_wind.png',
-    //     });
+        const container_wind = page.locator('#container_wind');
+        await container_wind.screenshot({
+            path:
+                'src/assets/forecast-images/YHY_RDPS_wind.png',
+        });
 
-    //     const container_llwind = page.locator('#container_llwind');
-    //     await container_llwind.screenshot({
-    //         path:
-    //             'src/assets/forecast-images/YHY_RDPS_llwind.png',
-    //     });
+        const container_llwind = page.locator('#container_llwind');
+        await container_llwind.screenshot({
+            path:
+                'src/assets/forecast-images/YHY_RDPS_llwind.png',
+        });
 
 
 
-    //     /**************** */
-    //     await page.goto('https://spotwx.com/products/grib_index.php?model=nam_awphys&lat=60.00552&lon=-111.88494&tz=America/Yellowknife&label=ThebachaFPV%20-%20Fort%20Smith');
-    //     await page.waitForLoadState('networkidle');
-    //     await page.waitForTimeout(500);
-    //     await page.locator('.highcharts-title:has-text("NAM forecast for ThebachaFPV")').waitFor();
+        /**************** */
+        await page.goto('https://spotwx.com/products/grib_index.php?model=nam_awphys&lat=60.00552&lon=-111.88494&tz=America/Yellowknife&label=ThebachaFPV%20-%20Fort%20Smith');
+        await page.waitForLoadState('networkidle');
+        await page.waitForTimeout(500);
+        await page.locator('.highcharts-title:has-text("NAM forecast for ThebachaFPV")').waitFor();
 
-    //     // Take a full page screenshot
-    //     await page.screenshot({
-    //         path: 'src/assets/forecast-images/YHY_NAM.png',
-    //         omitBackground: true,
-    //         fullPage: true
-    //     });
+        // Take a full page screenshot
+        await page.screenshot({
+            path: 'src/assets/forecast-images/YHY_NAM.png',
+            omitBackground: true,
+            fullPage: true
+        });
 
-    // });
+    });
 
-    // test('YSM OkToFly.com', async ({ page }) => {
+    test('YSM OkToFly.com', async ({ page }) => {
 
-    //     await page.goto('https://oktofly.com/loc/60.004541,-111.823387');
-    //     await page.waitForLoadState('networkidle');
-    //     await page.waitForTimeout(500);
+        await page.goto('https://oktofly.com/loc/60.004541,-111.823387');
+        await page.waitForLoadState('networkidle');
+        await page.waitForTimeout(500);
 
-    //     // accept the licence:
-    //     await page.click('#acceptlicense');
-    //     await page.waitForTimeout(500);
+        // accept the licence:
+        await page.click('#acceptlicense');
+        await page.waitForTimeout(500);
 
-    //     // Move mouse to far left of screen to avoid hover effects
-    //     await page.mouse.move(0, 0);
-    //     await page.waitForTimeout(100); // Small delay for hover effects to clear
+        // Move mouse to far left of screen to avoid hover effects
+        await page.mouse.move(0, 0);
+        await page.waitForTimeout(100); // Small delay for hover effects to clear
 
 
 
-    //     await page.locator('#time_label').first().waitFor();
+        await page.locator('#time_label').first().waitFor();
 
 
 
-    //     const header = page.locator('#date_selector_canvas');
-    //     await header.screenshot({
-    //         path:
-    //             'src/assets/forecast-images/YSM_OkTofly_header.png',
-    //     });
+        const header = page.locator('#date_selector_canvas');
+        await header.screenshot({
+            path:
+                'src/assets/forecast-images/YSM_OkTofly_header.png',
+        });
 
-    //     const container_temperature = page.locator('#timeslot_container_0');
-    //     await container_temperature.screenshot({
-    //         path:
-    //             'src/assets/forecast-images/YSM_OkTofly_T0.png',
-    //     });
+        const container_temperature = page.locator('#timeslot_container_0');
+        await container_temperature.screenshot({
+            path:
+                'src/assets/forecast-images/YSM_OkTofly_T0.png',
+        });
 
-    //     // const container_precip = page.locator('#timeslot_container_1');
-    //     // await container_precip.screenshot({
-    //     //     path:
-    //     //         'src/assets/forecast-images/YSM_OkTofly_T1.png',
-    //     // });
+        // const container_precip = page.locator('#timeslot_container_1');
+        // await container_precip.screenshot({
+        //     path:
+        //         'src/assets/forecast-images/YSM_OkTofly_T1.png',
+        // });
 
-    //     // const container_wind = page.locator('#timeslot_container_2');
-    //     // await container_wind.screenshot({
-    //     //     path:
-    //     //         'src/assets/forecast-images/YSM_OkTofly_T2.png',
-    //     // });
-    // });
+        // const container_wind = page.locator('#timeslot_container_2');
+        // await container_wind.screenshot({
+        //     path:
+        //         'src/assets/forecast-images/YSM_OkTofly_T2.png',
+        // });
+    });
 
-    // test('YHY OkToFly.com', async ({ page }) => {
+    test('YHY OkToFly.com', async ({ page }) => {
 
-    //     await page.goto('https://oktofly.com/loc/60.004541,-115.779971');
-    //     await page.waitForLoadState('networkidle');
-    //     await page.waitForTimeout(500);
+        await page.goto('https://oktofly.com/loc/60.004541,-115.779971');
+        await page.waitForLoadState('networkidle');
+        await page.waitForTimeout(500);
 
-    //     // accept the licence:
-    //     await page.click('#acceptlicense');
-    //     await page.waitForTimeout(500);
+        // accept the licence:
+        await page.click('#acceptlicense');
+        await page.waitForTimeout(500);
 
-    //     // Move mouse to far left of screen to avoid hover effects
-    //     await page.mouse.move(0, 0);
-    //     await page.waitForTimeout(100); // Small delay for hover effects to clear
+        // Move mouse to far left of screen to avoid hover effects
+        await page.mouse.move(0, 0);
+        await page.waitForTimeout(100); // Small delay for hover effects to clear
 
-    //     await page.locator('#time_label').first().waitFor();
+        await page.locator('#time_label').first().waitFor();
 
-    //     const header = page.locator('#date_selector_canvas');
-    //     await header.screenshot({
-    //         path:
-    //             'src/assets/forecast-images/YHY_OkTofly_header.png',
-    //     });
+        const header = page.locator('#date_selector_canvas');
+        await header.screenshot({
+            path:
+                'src/assets/forecast-images/YHY_OkTofly_header.png',
+        });
 
-    //     const container_temperature = page.locator('#timeslot_container_0');
-    //     await container_temperature.screenshot({
-    //         path:
-    //             'src/assets/forecast-images/YHY_OkTofly_T0.png',
-    //     });
+        const container_temperature = page.locator('#timeslot_container_0');
+        await container_temperature.screenshot({
+            path:
+                'src/assets/forecast-images/YHY_OkTofly_T0.png',
+        });
 
-    //     // const container_precip = page.locator('#timeslot_container_1');
-    //     // await container_precip.screenshot({
-    //     //     path:
-    //     //         'src/assets/forecast-images/YHY_OkTofly_T1.png',
-    //     // });
+        // const container_precip = page.locator('#timeslot_container_1');
+        // await container_precip.screenshot({
+        //     path:
+        //         'src/assets/forecast-images/YHY_OkTofly_T1.png',
+        // });
 
-    //     // const container_wind = page.locator('#timeslot_container_2');
-    //     // await container_wind.screenshot({
-    //     //     path:
-    //     //         'src/assets/forecast-images/YHY_OkTofly_T2.png',
-    //     // });
-    // });
+        // const container_wind = page.locator('#timeslot_container_2');
+        // await container_wind.screenshot({
+        //     path:
+        //         'src/assets/forecast-images/YHY_OkTofly_T2.png',
+        // });
+    });
     // smith https://oktofly.com/loc/60.004541,-111.823387
     // hay https://oktofly.com/loc/60.004541,-115.779971
 
