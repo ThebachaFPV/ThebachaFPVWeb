@@ -135,6 +135,15 @@
 			"isBackground": false,
 			"problemMatcher": [],
 			"group": "none"
+		},
+		{
+			"label": "Trigger E2E Workflow",
+			"type": "shell",
+			"command": "gh workflow run e2e-tests.yml",
+			"args": [],
+			"isBackground": false,
+			"problemMatcher": [],
+			"group": "none"
 		}
 	]
 }
