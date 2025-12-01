@@ -23,6 +23,10 @@ export default defineConfig({
           src: 'src/assets/forecast-images',
           dest: 'assets',
         },
+        {
+          src: 'src/assets/sponsors',
+          dest: 'assets',
+        },
       ],
     }),
   ],
