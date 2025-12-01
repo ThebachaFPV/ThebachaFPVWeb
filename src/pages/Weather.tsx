@@ -30,11 +30,11 @@ const Weather: React.FC = () => (
         <a target="_blank" href="https://oktofly.com/loc/60.004541,-111.823387" style={{ color: '#0066cc', textDecoration: 'underline' }}>OkToFly.com</a></h4>
       <img src="/assets/forecast-images/YSM_OkTofly_header.png"></img>
       <img src="/assets/forecast-images/YSM_OkTofly_T0.png"></img>
-      <h3>Drone Map - Fort Smith</h3>
+      {/* <h3>Drone Map - Fort Smith</h3>
       <h4>Data Courtesy of NRCAN:
         <a target="_blank" href="https://nrc.canada.ca/en/drone-tool/flightMap.php" style={{ color: '#0066cc', textDecoration: 'underline' }}>https://nrc.canada.ca/en/drone-tool/flightMap.php</a></h4>
       <img src="/assets/forecast-images/YSM_NRCAN_DroneMap1.png"></img>
-      <img src="/assets/forecast-images/YSM_NRCAN_DroneMap2.png"></img>
+      <img src="/assets/forecast-images/YSM_NRCAN_DroneMap2.png"></img> */}
     </section>
 
 
@@ -71,11 +71,11 @@ const Weather: React.FC = () => (
         <a target="_blank" href="https://oktofly.com/loc/60.004541,-115.779971" style={{ color: '#0066cc', textDecoration: 'underline' }}>OkToFly.com</a></h4>
       <img src="/assets/forecast-images/YHY_OkTofly_header.png"></img>
       <img src="/assets/forecast-images/YHY_OkTofly_T0.png"></img>
-      <h3>Drone Map - Hay River</h3>
+      {/* <h3>Drone Map - Hay River</h3>
       <h4>Data Courtesy of NRCAN:
         <a target="_blank" href="https://nrc.canada.ca/en/drone-tool/flightMap.php" style={{ color: '#0066cc', textDecoration: 'underline' }}>https://nrc.canada.ca/en/drone-tool/flightMap.php</a></h4>
       <img src="/assets/forecast-images/YHY_NRCAN_DroneMap1.png"></img>
-      <img src="/assets/forecast-images/YHY_NRCAN_DroneMap2.png"></img>
+      <img src="/assets/forecast-images/YHY_NRCAN_DroneMap2.png"></img> */}
     </section>
   </div>
 );

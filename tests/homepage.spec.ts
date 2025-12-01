@@ -429,93 +429,93 @@ test.describe('ThebachaFPV Weather Forecasts', () => {
     // hay https://oktofly.com/loc/60.004541,-115.779971
 
 
-    test('YSM drone map', async ({ page }) => {
-        // goto the page
-        await page.goto('https://nrc.canada.ca/en/drone-tool/flightMap.php');
-        await page.waitForLoadState('networkidle');
+    // test('YSM drone map', async ({ page }) => {
+    //     // goto the page
+    //     await page.goto('https://nrc.canada.ca/en/drone-tool-2/map.html');
+    //     await page.waitForLoadState('networkidle');
 
-        //open the map style
+    //     //open the map style
 
-        await page.getByRole('button', { name: 'Change map style' }).click();
-        await page.waitForTimeout(500);
-        // select the sattelite layer:
-        await page.getByRole('menuitemradio', { name: 'Satellite' }).click();
-        await page.waitForLoadState('networkidle');
-        await page.waitForTimeout(500);
-        await page.getByRole('tab', { name: /Go to Operation Details tab/i }).click();
-        await page.waitForTimeout(500);
-        await page.check('#MICRO'); // specific for radio/checkbox
+    //     await page.getByRole('button', { id: 'Change map style' }).click();
+    //     await page.waitForTimeout(500);
+    //     // select the sattelite layer:
+    //     await page.getByRole('menuitemradio', { name: 'Satellite' }).click();
+    //     await page.waitForLoadState('networkidle');
+    //     await page.waitForTimeout(500);
+    //     await page.getByRole('tab', { name: /Go to Operation Details tab/i }).click();
+    //     await page.waitForTimeout(500);
+    //     await page.check('#MICRO'); // specific for radio/checkbox
 
-        await page.getByRole('tab', { name: /Go to Map Controls tab/i }).click();
-        await page.waitForTimeout(500);
-        await page.check('#zctl');
+    //     await page.getByRole('tab', { name: /Go to Map Controls tab/i }).click();
+    //     await page.waitForTimeout(500);
+    //     await page.check('#zctl');
 
 
-        await page.click('a[title="Map Centre"]');
-        await page.waitForTimeout(500);
-        await page.click('#zoomKbd');
-        // 60.00552&lon=-111.88494
-        await page.fill('#zoomLatNumeric', '60.0055');
-        await page.fill('#zoomLonNumeric', '-111.8849');
-        await page.waitForTimeout(500);
-        await page.locator('#setZoomKbdButn').click();
-        await page.waitForTimeout(500);
+    //     await page.click('a[title="Map Centre"]');
+    //     await page.waitForTimeout(500);
+    //     await page.click('#zoomKbd');
+    //     // 60.00552&lon=-111.88494
+    //     await page.fill('#zoomLatNumeric', '60.0055');
+    //     await page.fill('#zoomLonNumeric', '-111.8849');
+    //     await page.waitForTimeout(500);
+    //     await page.locator('#setZoomKbdButn').click();
+    //     await page.waitForTimeout(500);
 
-        // close the options:
-        await page.click('a[title="Map Centre"]');
+    //     // close the options:
+    //     await page.click('a[title="Map Centre"]');
 
-        // zoom in
-        await page.click('button[title="Zoom in"]');
-        await page.click('button[title="Zoom in"]');
-        // wait for stable
-        await page.waitForLoadState('networkidle');
-        await page.waitForTimeout(500);
-        //screencap
-        await page.screenshot({
-            path: 'src/assets/forecast-images/YSM_NRCAN_DroneMap1.png',
-            fullPage: true
-        });
-        await page.click('button[title="Zoom out"]');
-        await page.waitForLoadState('networkidle');
-        await page.waitForTimeout(500);
-        //screencap
-        await page.screenshot({
-            path: 'src/assets/forecast-images/YSM_NRCAN_DroneMap2.png',
-            fullPage: true
-        });
-        await page.waitForTimeout(500);
+    //     // zoom in
+    //     await page.click('button[title="Zoom in"]');
+    //     await page.click('button[title="Zoom in"]');
+    //     // wait for stable
+    //     await page.waitForLoadState('networkidle');
+    //     await page.waitForTimeout(500);
+    //     //screencap
+    //     await page.screenshot({
+    //         path: 'src/assets/forecast-images/YSM_NRCAN_DroneMap1.png',
+    //         fullPage: true
+    //     });
+    //     await page.click('button[title="Zoom out"]');
+    //     await page.waitForLoadState('networkidle');
+    //     await page.waitForTimeout(500);
+    //     //screencap
+    //     await page.screenshot({
+    //         path: 'src/assets/forecast-images/YSM_NRCAN_DroneMap2.png',
+    //         fullPage: true
+    //     });
+    //     await page.waitForTimeout(500);
 
-        await page.click('a[title="Map Centre"]');
-        await page.waitForTimeout(500);
-        await page.click('#zoomKbd');
-        // lat=60.8234&lon=-115.7629
-        await page.fill('#zoomLatNumeric', '60.8234');
-        await page.fill('#zoomLonNumeric', '-115.7629');
-        await page.waitForTimeout(500);
-        await page.locator('#setZoomKbdButn').click();
-        await page.waitForTimeout(500);
-        await page.click('button[title="Zoom in"]');
-        await page.waitForLoadState('networkidle');
+    //     await page.click('a[title="Map Centre"]');
+    //     await page.waitForTimeout(500);
+    //     await page.click('#zoomKbd');
+    //     // lat=60.8234&lon=-115.7629
+    //     await page.fill('#zoomLatNumeric', '60.8234');
+    //     await page.fill('#zoomLonNumeric', '-115.7629');
+    //     await page.waitForTimeout(500);
+    //     await page.locator('#setZoomKbdButn').click();
+    //     await page.waitForTimeout(500);
+    //     await page.click('button[title="Zoom in"]');
+    //     await page.waitForLoadState('networkidle');
 
-        // close the options:
-        await page.click('a[title="Map Centre"]');
-        await page.waitForLoadState('networkidle');
-        await page.waitForTimeout(500);
-        //screencap
-        await page.screenshot({
-            path: 'src/assets/forecast-images/YHY_NRCAN_DroneMap1.png',
-            fullPage: true
-        });
-        await page.click('button[title="Zoom out"]');
-        await page.waitForLoadState('networkidle');
-        await page.waitForTimeout(500);
-        //screencap
-        await page.screenshot({
-            path: 'src/assets/forecast-images/YHY_NRCAN_DroneMap2.png',
-            fullPage: true
-        });
-        await page.waitForTimeout(500);
-    });
+    //     // close the options:
+    //     await page.click('a[title="Map Centre"]');
+    //     await page.waitForLoadState('networkidle');
+    //     await page.waitForTimeout(500);
+    //     //screencap
+    //     await page.screenshot({
+    //         path: 'src/assets/forecast-images/YHY_NRCAN_DroneMap1.png',
+    //         fullPage: true
+    //     });
+    //     await page.click('button[title="Zoom out"]');
+    //     await page.waitForLoadState('networkidle');
+    //     await page.waitForTimeout(500);
+    //     //screencap
+    //     await page.screenshot({
+    //         path: 'src/assets/forecast-images/YHY_NRCAN_DroneMap2.png',
+    //         fullPage: true
+    //     });
+    //     await page.waitForTimeout(500);
+    // });
 
 });
 
