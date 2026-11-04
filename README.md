@@ -20,7 +20,34 @@ To view the website go to:
   4. Open [http://localhost:5173](http://localhost:5173) in your browser.
 - To build for production: `npm run build`
 - To preview the production build: `npm run preview`
-- To deploy to GitHub Pages: `gh-pages -d dist` (after building)
+- To run the schedule unit tests: `node --experimental-strip-types tests/eventSchedule.test.mjs`
+
+#### Deploying
+
+**The live site is published by a GitHub Actions workflow, not by the
+`gh-pages` branch.** GitHub Pages for this repo is configured with
+`build_type: workflow`, so `.github/workflows/e2e-tests.yml` builds `dist/`
+and publishes it with `actions/upload-pages-artifact` +
+`actions/deploy-pages`. It runs daily at 12:00 UTC, and on demand.
+
+- To deploy now: `gh workflow run e2e-tests.yml -R ThebachaFPV/ThebachaFPVWeb`
+- Pushing to `main` does **not** deploy on its own — the workflow has no
+  `push` trigger.
+
+> This section previously read "To deploy to GitHub Pages: `gh-pages -d dist`".
+> That is the `deploy` script in package.json and it still runs, but it pushes
+> to the `gh-pages` branch, which **no longer serves the site**. Following it
+> reports success, changes the branch, and leaves www.thebachafpv.org exactly
+> as it was — corrected 2026-11-04 after doing precisely that. Verify what is
+> actually being served with:
+>
+> ```
+> gh api repos/ThebachaFPV/ThebachaFPVWeb/pages --jq .build_type
+> curl -s https://www.thebachafpv.org/index.html | grep -o 'assets/index-[^"]*\.js'
+> ```
+>
+> The second command names the bundle the CDN is handing out, which is the
+> only thing that settles whether a deploy landed.
 
 ### League Documents
 
