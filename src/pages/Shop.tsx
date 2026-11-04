@@ -1,4 +1,5 @@
 import React from 'react';
+import ContactLink from '../components/ContactLink';
 import rv_logo from '../assets/rotor_village_logo.webp';
 const Store: React.FC = () => {
   return (
@@ -39,7 +40,7 @@ const Store: React.FC = () => {
           <b>Full wishlist link:</b> <a href="https://rotorvillage.ca/wishlist.php?publicwishlist=d615f238-0e53-4c60-9e54-3dceac8da11a" target="_blank" rel="noopener noreferrer">TFPVRL Beginner Starter Kit Wishlist</a>
         </p>
         <p>
-          <b>League Rentals:</b> The league maintains a small pool of equipment for short-term member use. Contact us to check availability or to arrange a trial before purchasing your own gear.
+          <b>League Rentals:</b> The league maintains a small pool of equipment for short-term member use. <ContactLink subject="League rental enquiry">Contact us</ContactLink> to check availability or to arrange a trial before purchasing your own gear.
         </p>
       </section>
       <section style={{ margin: '2.5rem 0', textAlign: 'left' }}>
@@ -70,12 +71,12 @@ const Store: React.FC = () => {
           <b>Full wishlist link:</b> <a href="https://rotorvillage.ca/wishlist.php?publicwishlist=22a42c57-1893-4f01-92b3-1655dd64d7b2" target="_blank" rel="noopener noreferrer">TFPVRL Advanced Starter Kit Wishlist</a>
         </p>
         <p>
-          <b>League Rentals:</b> The league maintains a small pool of equipment for short-term member use. Contact us to check availability or to arrange a trial before purchasing your own gear.
+          <b>League Rentals:</b> The league maintains a small pool of equipment for short-term member use. <ContactLink subject="League rental enquiry">Contact us</ContactLink> to check availability or to arrange a trial before purchasing your own gear.
         </p>
       </section>
       <section style={{ margin: '2.5rem 0', textAlign: 'left' }}>
         <h2>How to Access</h2>
-        <p>Contact the league or speak to a mentor to learn more about available packages, pricing, and how to get started. We are here to help you find the right equipment for your needs and skill level.</p>
+        <p><ContactLink subject="Equipment enquiry">Contact the league</ContactLink> or speak to a mentor to learn more about available packages, pricing, and how to get started. We are here to help you find the right equipment for your needs and skill level.</p>
       </section>
     </div>
   );

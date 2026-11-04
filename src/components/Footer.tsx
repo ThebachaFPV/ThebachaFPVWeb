@@ -1,5 +1,6 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
+import ContactLink from './ContactLink';
 
 // Neither of these is typed by hand any more. The footer carried
 // "© 2025" and "Last modified: Oct 26, 2025" into November 2026 — both over a
@@ -12,6 +13,9 @@ const Footer: React.FC = () => {
   return (
     <footer >
       <p>&copy; {buildDate.getFullYear()} Thebacha FPV Racing League. All rights reserved. <span style={{ fontSize: 'smaller' }}>| <Link to="/shop" style={{ color: 'inherit', textDecoration: 'underline' }}>Shop</Link></span></p>
+      <p style={{ marginTop: '0.25rem' }}>
+        <ContactLink subject="Website enquiry">Contact us</ContactLink>
+      </p>
       <div style={{ fontSize: '0.9rem', marginTop: '0.5rem', color: 'var(--white)' }}>
         Last modified:{' '}
         {buildDate.toLocaleDateString('en-CA', { year: 'numeric', month: 'short', day: 'numeric' })}

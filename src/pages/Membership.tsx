@@ -1,4 +1,5 @@
 import React from 'react';
+import ContactLink from '../components/ContactLink';
 import avatarPlaceholder from '../assets/avatar-placeholder.png';
 import badge from '../assets/badge.png';
 
@@ -73,7 +74,7 @@ const Membership: React.FC = () => {
       <section style={{ margin: '2.5rem 0', textAlign: 'left' }}>
         <h2>How to Join</h2>
         <p>
-          Becoming a member is easy! Simply contact us or attend one of our events to get started. Annual Associate membership is $50 and full is $100, which helps cover league expenses and supports our community programs.
+          Becoming a member is easy! Simply <ContactLink subject="Membership enquiry">contact us</ContactLink> or attend one of our events to get started. Annual Associate membership is $50 and full is $100, which helps cover league expenses and supports our community programs.
         </p>
         <img src={avatarPlaceholder} alt="New Member" style={{ width: '80px', borderRadius: '50%', margin: '1rem 0' }} />
       </section>

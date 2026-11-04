@@ -1,4 +1,5 @@
 import React from 'react';
+import ContactLink from '../components/ContactLink';
 import logo from '../assets/logo.png';
 import badge from '../assets/badge.png';
 import avatarPlaceholder from '../assets/avatar-placeholder.png';
@@ -53,7 +54,7 @@ const Home: React.FC = () => {
       <section style={{ margin: '2.5rem 0', textAlign: 'left' }}>
         <h2>For Partners & Funders</h2>
         <p>
-          We collaborate with schools, local businesses, and funding agencies to expand access to drone technology and STEM education. Our programs are designed to benefit youth, promote innovation, and strengthen community ties. Contact us to learn how you can support or partner with us.
+          We collaborate with schools, local businesses, and funding agencies to expand access to drone technology and STEM education. Our programs are designed to benefit youth, promote innovation, and strengthen community ties. <ContactLink subject="Partnership enquiry">Contact us</ContactLink> to learn how you can support or partner with us.
         </p>
       </section>
 
