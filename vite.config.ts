@@ -4,6 +4,13 @@ import { viteStaticCopy } from 'vite-plugin-static-copy';
 
 export default defineConfig({
   base: '/', // Serve site at the root of GitHub Pages
+  // Stamped at build time so the footer cannot go stale by itself. The footer
+  // previously carried a hand-typed "Last modified: Oct 26, 2025" and a
+  // "© 2025", both of which were over a year out of date — the same failure as
+  // the event calendar: a date a human has to remember to change.
+  define: {
+    __BUILD_DATE__: JSON.stringify(new Date().toISOString()),
+  },
   server: {
     port: 5173,
   },
